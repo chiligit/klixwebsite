@@ -1,0 +1,27 @@
+{
+  "name": "klixnetwork",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "ChiliSoft <info@chilisoft.org>"
+  ],
+  "description": "klixnetwork JavaScript dependencies",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "jqBootstrapValidation": "~1.3.7",
+    "bxslider-4": "~4.2.5",
+    "wowjs": "~1.1.2",
+    "gmap3": "~6.0.0",
+    "konami-js": "*"
+  }
+}
