@@ -11,13 +11,11 @@ WORKDIR /opt/app/KlixNetwork
 
 RUN git clone https://github.com/chiligit/klixwebsite.git
 
+WORKDIR /opt/app/KlixNetwork/klixwebsite
+
 RUN npm install;
-
-RUN node index.js
-
-ADD simplejsserver.js /opt/app/KlixNetwork/simplesjserver.js
 
 EXPOSE 3000
 VOLUME ["/opt/app/KlixNetwork"]
 
-CMD pm2 start simplesjserver.js -l /opt/app/KlixNetwork/logs/KlixNetwork.log -i 0 && pm2 logs
+CMD pm2 start index.js -i 0 && pm2 logs 
