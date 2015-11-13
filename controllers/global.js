@@ -19,7 +19,6 @@ module.exports = function(app){
     var globalController = {
         index: function(req, res){
 			if (req.method == 'POST') {
-					console.log(req.body);
 					saveFormData(app,'contact_us',req.body);
 			} else {
 			  res.render('index');
@@ -27,7 +26,12 @@ module.exports = function(app){
         },
 
         plan: function(req, res){
-            res.render('plan');
+			if (req.method == 'POST') {
+					console.log(req.body);
+					saveFormData(app,'contact_us',req.body);
+			} else {
+				res.render('plan');
+			}
         }
 
     };
