@@ -3,9 +3,15 @@ var path = require('path');
 var i18n = require('i18n');
 var load = require('express-load');
 var ECT = require('ect');
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/klix');
 
 var app = express();
 var ectRenderer = ECT({ watch: true, root: __dirname + '/views', ext : '.ect' });
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
 
 i18n.configure({
     locales:['en', 'hu'],

@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "ect": "^0.5.9",
     "express": "^4.13.3",
     "express-load": "^1.1.15",
     "i18n": "^0.5.0",
+    "mongoose": "^4.2.5",
     "path": "^0.12.7"
   }
 }

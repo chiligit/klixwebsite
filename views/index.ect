@@ -228,19 +228,19 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.1s" data-wow-offset="100">
-                    <h3>Pöttöm</h3>  
+                    <h3><%- @__("package.first.name")%></h3>  
                     <ul class="list-table">                        
-                        <li>1GB RAM</li>
-                        <li>30GB SSD </li>
-                        <li>Korlátlan sávszél</li>
-                        <li>Korlátlan domain</li>
-                        <li>1 dedikált IP</li>
-                        <li>100% hálózat uptime</li>
-                        <li>24/7 Support</li>   
-                        <li>&nbsp;</li>
+                        <li><%- @__("package.first.memory")%></li>
+                        <li><%- @__("package.first.disk")%></li>
+                        <li><%- @__("package.first.bandwidth")%></li>
+                        <li><%- @__("package.first.domain")%></li>
+                        <li><%- @__("package.first.ip")%></li>
+                        <li><%- @__("package.first.uptime")%></li>
+                        <li><%- @__("package.first.support")%></li>   
+                        <li><%- @__("package.first.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan';">                                
-                                Részletek
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.first.id")%>';">                                
+                                <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
                         </li>
@@ -249,19 +249,19 @@
             </div>
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.3s" data-wow-offset="100">
-                    <h3>Güzü</h3>  
+                    <h3><%- @__("package.second.name")%></h3>  
                     <ul class="list-table">                        
-                        <li>2GB RAM</li>
-                        <li>60GB SSD </li>
-                        <li>Korlátlan sávszél</li>
-                        <li>Korlátlan domain</li>
-                        <li>1 dedikált IP</li>
-                        <li>100% hálózat uptime</li>
-                        <li>24/7 Support</li>
-                        <li>&nbsp;</li>
+                        <li><%- @__("package.second.memory")%></li>
+                        <li><%- @__("package.second.disk")%></li>
+                        <li><%- @__("package.second.bandwidth")%></li>
+                        <li><%- @__("package.second.domain")%></li>
+                        <li><%- @__("package.second.ip")%></li>
+                        <li><%- @__("package.second.uptime")%></li>
+                        <li><%- @__("package.second.support")%></li>   
+                        <li><%- @__("package.second.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan';">                                
-                                Részletek
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.second.id")%>';">                                
+                                <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
                         </li>                  
@@ -270,19 +270,19 @@
             </div>
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.5s" data-wow-offset="100">
-                    <h3>Gigász</h3>  
+                    <h3><%- @__("package.third.name")%></h3>  
                     <ul class="list-table">                        
-                        <li>8GB RAM</li>
-                        <li>240GB SSD </li>
-                        <li>Korlátlan sávszél</li>
-                        <li>Korlátlan domain</li>
-                        <li>1 dedikált IP</li>
-                        <li>100% hálózat uptime</li>
-                        <li>24/7 Support</li>
-                        <li>&nbsp;</li>
+                        <li><%- @__("package.third.memory")%></li>
+                        <li><%- @__("package.third.disk")%></li>
+                        <li><%- @__("package.third.bandwidth")%></li>
+                        <li><%- @__("package.third.domain")%></li>
+                        <li><%- @__("package.third.ip")%></li>
+                        <li><%- @__("package.third.uptime")%></li>
+                        <li><%- @__("package.third.support")%></li>   
+                        <li><%- @__("package.third.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan';">                                
-                                Részletek
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.third.id")%>';">                                
+                                <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
                         </li>                        
@@ -291,19 +291,19 @@
             </div>
             <div class="col-md-3">
                 <div class="plan custom wow bounceInDown" data-wow-delay="0.7s" data-wow-offset="100">
-                    <h3>Egyedi</h3>  
+                    <h3><%- @__("package.fourth.name")%></h3>  
                     <ul class="list-table">                        
-                        <li>1-8GB RAM</li>
-                        <li>30-240GB SSD </li>
-                        <li>Korlátlan sávszél</li>
-                        <li>Korlátlan domain</li>
-                        <li>1-100 dedikált IP</li>
-                        <li>100% hálózat uptime</li>
-                        <li>24/7 Support</li>
-                        <li>Egyedi igények</li>
+                        <li><%- @__("package.fourth.memory")%></li>
+                        <li><%- @__("package.fourth.disk")%></li>
+                        <li><%- @__("package.fourth.bandwidth")%></li>
+                        <li><%- @__("package.fourth.domain")%></li>
+                        <li><%- @__("package.fourth.ip")%></li>
+                        <li><%- @__("package.fourth.uptime")%></li>
+                        <li><%- @__("package.fourth.support")%></li>   
+                        <li><%- @__("package.fourth.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan';">                                
-                                Részletek
+                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan&type=<%- @__("package.fourth.id")%>';">                                
+                                <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
                         </li>

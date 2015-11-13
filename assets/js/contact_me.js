@@ -25,9 +25,9 @@ $(function() {
 			
 			var captchaResponse = $("#g-recaptcha-response");
 			if (captchaResponse.val().length != 0)
-				
+	
             $.ajax({
-                url: "http://localhost:3000/index",
+                url: window.location.href,
                 type: "POST",
                 data: {
                     name: name,
