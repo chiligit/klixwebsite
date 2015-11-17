@@ -1,4 +1,4 @@
-module.exports = function(app){
+﻿module.exports = function(app){
 
 	var saveFormData = function(app, type, params){
 		console.log(params);
@@ -11,9 +11,20 @@ module.exports = function(app){
 			}); 
 			newFormData.save(function(err) {
 				if (err) throw err;
-				console.log('formData created!');
+				console.log('FormData created!');
 			});	
-		
+			var mailString = "Típus: "+type+"\n"+"Név: "+params.name+ "\n" + "Telefonszám: "+params.phone+"\n"+"Email cím: "+params.email+" \n"+ "Üzenet: "+params.message;
+			app.services.mail.sendMail({
+				to: config.user,
+				subject: 'Kapcsolatfelvétel',
+				text: mailString
+			},function(error, info){
+				if(error){
+					return console.log(error);
+				}
+				console.log(mailString);
+				console.log('Message sent: ' + info.response);
+			});
 	}
 
     var globalController = {
@@ -29,7 +40,6 @@ module.exports = function(app){
 			if ((req.query.package != undefined) && ("package."+req.query.package+".id" != res.__("package."+req.query.package+".id"))) {
 
 				if (req.method == 'POST') {
-						console.log(req.body);
 						saveFormData(app,'package:'+req.query.package,req.body);
 				} else {
 						var data = { package : req.query.package };

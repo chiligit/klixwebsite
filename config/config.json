@@ -1,0 +1,4 @@
+{
+  "mongodbUriString" : "mongodb://localhost/klix",
+  "user": "klixnetworkklix@gmail.com"
+}
