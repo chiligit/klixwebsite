@@ -18,7 +18,6 @@ module.exports = function(app){
 
     var globalController = {
         index: function(req, res){
-			console.log("Cookies: ", req.cookies)
 			if (req.method == 'POST') {
 					saveFormData(app,'contact_us',req.body);
 			} else {
@@ -27,21 +26,18 @@ module.exports = function(app){
         },
 
         plan: function(req, res){
-			if (req.method == 'POST') {
-					console.log(req.body);
-					saveFormData(app,'contact_us',req.body);
-			} else {
-				console.log(req.query.package);
-				console.log("package."+req.query.package+".id");
-				console.log(res.__("package."+req.query.package+".id"));
-				if ((req.query.package != undefined) && ("package."+req.query.package+".id" != res.__("package."+req.query.package+".id"))) {
-					var data = { package : req.query.package };
-					res.render('plan', data);	
+			if ((req.query.package != undefined) && ("package."+req.query.package+".id" != res.__("package."+req.query.package+".id"))) {
+
+				if (req.method == 'POST') {
+						console.log(req.body);
+						saveFormData(app,'package:'+req.query.package,req.body);
+				} else {
+						var data = { package : req.query.package };
+						res.render('plan', data);	
 				}
-				else {
+			}
+			else{
 					res.render('index');
-				}
-			
 			}
         }
 

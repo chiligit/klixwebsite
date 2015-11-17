@@ -5,6 +5,7 @@ module.exports = function(app){
     app.get('/index', global.index);
     app.get('/plan', global.plan);
 
+	app.post('/', global.index);
     app.post('/index' , global.index);
     app.post('/plan', global.plan);
 }

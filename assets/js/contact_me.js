@@ -26,6 +26,7 @@ $(function() {
 			var captchaResponse = $("#g-recaptcha-response");
 			if (captchaResponse.val().length != 0)
 	
+			alert(window.location.href);
             $.ajax({
                 url: window.location.href,
                 type: "POST",

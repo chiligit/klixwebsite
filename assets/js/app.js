@@ -317,6 +317,8 @@
 			$('#hu').show();
 		}
 		
+	
+		
 });
 	var checkCaptcha = function() {
 
