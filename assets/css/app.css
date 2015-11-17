@@ -161,6 +161,13 @@ Google MAP & Info Box
   height: 50px;  
 }
 
+
+.navbar-lang {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
 #polygon_bg {
   z-index: -3;
   position: absolute;  
@@ -388,3 +395,6 @@ Google MAP & Info Box
   padding: 50px 0;
 }
 
+.language-logo {
+	padding-left:25px;
+}

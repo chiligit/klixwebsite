@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Kiválasztott csomag: Güzü</h2>
+                <h2><%- @__("package.selected")%>: <%- @__("package."+ @package + ".name")%></h2>
                 <hr class="star-primary medium">
             </div>
         </div>
@@ -100,10 +100,10 @@
         <div class="row">     
             <div class="col-md-6 text-center">                   
                 <ul class="list-table">                        
-                    <li>2GB RAM</li>
-                    <li>60GB SSD </li>
-                    <li>Korlátlan sávszél</li>
-                    <li>Korlátlan domain</li>                    
+                    <li><%- @__("package."+ @package + ".name")%></li>
+                    <li><%- @__("package."+ @package + ".disk")%></li>
+                    <li><%- @__("package."+ @package + ".bandwidth")%></li>
+                    <li><%- @__("package."+ @package + ".domain")%></li>                    
                 </ul>
             </div>
             <div class="col-md-6 text-center">

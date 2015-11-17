@@ -4,9 +4,7 @@ module.exports = function(app){
     app.get('/', global.index);
     app.get('/index', global.index);
     app.get('/plan', global.plan);
-    app.get('/plan:type', global.plan);
 
     app.post('/index' , global.index);
     app.post('/plan', global.plan);
-    app.post('/plan:type', global.plan);
 }

@@ -77,24 +77,30 @@
                     <a href="#page-top"></a>
                 </li>               
                 <li class="page-scroll">
-                    <a href="#about">Rólunk</a>
+                    <a href="#about"><%- @__("section.about-us")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#portfolio">Szolgáltatásaink</a>
+                    <a href="#portfolio"><%- @__("section.services")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#technology">Technológiák</a>
+                    <a href="#technology"><%- @__("section.technologies")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#plans">Díjcsomagok</a>
+                    <a href="#plans"><%- @__("section.packages")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#support">Support</a>
+                    <a href="#support"><%- @__("section.support")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#contact">Kapcsolat</a>
+                    <a href="#contact"><%- @__("section.contact-us")%></a>
                 </li>
-            </ul>    
+				<li>
+					<div class="language-logo">
+						<a href="" onclick="changeLang('hu')" id="hu" style="display:none"><img src="img/flags/lang_hu.gif" /></a>
+						<a href="" onclick="changeLang('en')" id="en" style="display:none"><img src="img/flags/lang_en.gif" /></a>
+					</div>
+				</li>
+			</ul>    
         </div>        
         <!-- /.navbar-collapse -->
     </div>
@@ -128,7 +134,7 @@
             <div class="col-md-6 container right wow bounceInLeft" data-wow-duration="2s" >
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2>Rólunk</h2>      
+                        <h2><%- @__("section.about-us")%></h2>      
                         <br/>                  
                     </div>
                 </div>
@@ -147,7 +153,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Szolgáltatásaink</h2>
+                <h2><%- @__("section.services")%></h2>
                 <hr class="star-primary thick">
             </div>
         </div>        
@@ -207,7 +213,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Technológiák</h2>
+                <h2><%- @__("section.technologies")%></h2>
                 <hr class="star-primary thick">
             </div>
         </div>
@@ -221,7 +227,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Díjcsomagok</h2>
+                <h2><%- @__("section.packages")%></h2>
                 <hr class="star-primary">
             </div>
         </div>
@@ -239,7 +245,7 @@
                         <li><%- @__("package.first.support")%></li>   
                         <li><%- @__("package.first.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.first.id")%>';">                                
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.first.id")%>';">                                
                                 <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
@@ -260,7 +266,7 @@
                         <li><%- @__("package.second.support")%></li>   
                         <li><%- @__("package.second.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.second.id")%>';">                                
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.second.id")%>';">                                
                                 <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
@@ -281,7 +287,7 @@
                         <li><%- @__("package.third.support")%></li>   
                         <li><%- @__("package.third.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan&type=<%- @__("package.third.id")%>';">                                
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.third.id")%>';">                                
                                 <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
@@ -302,7 +308,7 @@
                         <li><%- @__("package.fourth.support")%></li>   
                         <li><%- @__("package.fourth.other")%></li>
                         <li>
-                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan&type=<%- @__("package.fourth.id")%>';">                                
+                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan?package=<%- @__("package.fourth.id")%>';">                                
                                 <%- @__("package.details")%>
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
                             </button>
