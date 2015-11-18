@@ -18,4 +18,4 @@ RUN npm install;
 EXPOSE 3000
 VOLUME ["/opt/app/KlixNetwork"]
 
-CMD pm2 start index.js -i 0 && pm2 logs 
+CMD node index.js 
