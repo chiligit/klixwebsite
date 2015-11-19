@@ -48,5 +48,7 @@
 	"package.fourth.uptime": "package.fourth.uptime",
 	"package.fourth.support": "package.fourth.support",
 	"package.fourth.other": "package.fourth.other",
-	"package.fourth.id": "package.fourth.id"
+	"package.fourth.id": "package.fourth.id",
+	"cookieconsent.message": "This website uses cookies to ensure you get the best experience on our website",
+	"cookieconsent.dismiss": "Got it!"
 }

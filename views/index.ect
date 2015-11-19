@@ -22,7 +22,6 @@
     <!-- Custom CSS -->    
     <link href="lib/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet" />
     <link href="lib/wowjs/css/libs/animate.css" rel="stylesheet">
-	<link href="lib/eu-cookie-law-alert/css/jquery-eu-cookie-law-popup.css" rel="stylesheet">
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 
@@ -563,7 +562,10 @@
 <script src="lib/gmap3/dist/gmap3.min.js"></script>
 <script src="lib/highcharts-release/highcharts.js"></script>
 <script src="lib/konami-js/konami.js"></script>
-<script src="lib/eu-cookie-law-alert/js/jquery-eu-cookie-law-popup.js"></script>
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"<%- @__("cookieconsent.message")%>","dismiss":"<%- @__("cookieconsent.dismiss")%>","learnMore":"More info","link":null,"theme":"dark-bottom"};
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 
 <script src="js/app.js"></script>
 

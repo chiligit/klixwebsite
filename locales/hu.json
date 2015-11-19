@@ -47,5 +47,8 @@
 	"package.fourth.ip": "1-100 dedikált IP",
 	"package.fourth.uptime": "100% hálózat uptime",
 	"package.fourth.support": "24/7 support",
-	"package.fourth.other": "Egyedi igények"
+	"package.fourth.other": "Egyedi igények",
+	"cookieconsent.message": "Ez az oldal cookie-kat használ, melyekkel még hatékonyabb szolgáltatásokat nyújthatunk. Szolgáltatásaink igénybevételével Ön beleegyezik a cookie-k használatába",
+	"cookieconsent.dismiss": "Elfogadom"
+
 }
