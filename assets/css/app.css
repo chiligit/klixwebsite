@@ -102,8 +102,8 @@ Google MAP & Info Box
 .map-info-box {
   position: absolute;
   z-index: 5;  
-  top: 30px;  
-  right: 0px;
+  top: 53px;  
+  right: -20px;
   background-color: #4d4d4d;
   padding: 36px 24px 24px 24px;
   visibility: visible;
@@ -123,6 +123,13 @@ Google MAP & Info Box
   vertical-align: top;
   text-align: center;
 }
+
+.map-info-box .divider {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+}
+
 .map-info-box .map-info-box-logo .logo-icon {
   display: block;
   margin-bottom: 20px;
@@ -135,7 +142,7 @@ Google MAP & Info Box
   padding-top: 8px;
 }
 .map-info-box .map-info-box-logo.inline {
-  padding-right: 30px;
+  padding-right: 20px;
   margin-left:auto;
   margin-right:auto;
 }
