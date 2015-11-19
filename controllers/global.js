@@ -1,4 +1,5 @@
 ﻿module.exports = function(app){
+	var http = require('http');
 
 	var saveFormData = function(app, type, params){
 		console.log(params);
@@ -41,6 +42,10 @@
 
 				if (req.method == 'POST') {
 						saveFormData(app,'package:'+req.query.package,req.body);
+						var response = res.__("form.response.success");
+						res.send(res.__("form.response.success"));
+						res.status(200).end(http.STATUS_CODES[200]);
+						
 				} else {
 						var data = { package : req.query.package };
 						res.render('plan', data);	

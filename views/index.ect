@@ -167,9 +167,8 @@
                     <img src="img/portfolio/server-hosting.png" />
                 </div>
                 <div class="col-md-4">
-                    <h3>Szerver hosting</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>                    
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3><%- @__("section.services.server-hosting")%></h3>                    
+                    <p><%- @__("section.services.server-hosting.description")%></p>                    
                 </div> 
                 <div id="server-hosting-chart" class="col-md-3">
                 </div>
@@ -183,9 +182,8 @@
                     <img src="img/portfolio/vps.png" />
                 </div>
                 <div class="col-md-6">
-                    <h3>VPS</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>                    
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3><%- @__("section.services.vps")%></h3>                    
+                    <p><%- @__("section.services.vps.description")%></p>   
                 </div> 
             </div>
         </div>
@@ -197,9 +195,8 @@
                     <img src="img/portfolio/domain2.png" />
                 </div>
                 <div class="col-md-4">
-                    <h3>Domain</h3>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>                    
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3><%- @__("section.services.domain")%></h3>                    
+                    <p><%- @__("section.services.domain.description")%></p>   
                 </div> 
                 <div id="browser-shares-chart" class="col-md-3">
                 </div>
@@ -325,17 +322,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Support</h2>
+                <h2><%- @__("section.support")%></h2>
                 <hr class="star-primary">                
-                <h3>Ügyeleti telefonszámunk: +36-80-123-4567</h3>
+                <h3><%- @__("section.support.emergencyphone")%>: +36-80-123-4567</h3>
                 <hr class="star-red">
             </div>
         </div>
         <div class="row">            
             <div class="col-md-6 text wow bounceInRight" data-wow-delay="0.2s">
-                <h3>Kimagasló rendelkezésreállás</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+                <h3><%- @__("section.support.outstanding-availability")%></h3>	
+                <p><%- @__("section.support.outstanding-availability.description")%></p>            </div>
             <div class="col-md-6 image">
                 <img src="img/portfolio/uptime.png" />
             </div>
@@ -345,14 +341,14 @@
                 <img src="img/portfolio/customer-support.png" />                
             </div>
             <div class="col-md-6 text wow bounceInLeft" data-wow-delay="0.3s">
-                <h3>Ügyfélszolgálat</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3><%- @__("section.support.customer-service")%></h3>	
+                <p><%- @__("section.support.customer-service.description")%></p>
             </div>
         </div>
         <div class="row">            
             <div class="col-md-6 text wow bounceInRight" data-wow-delay="0.3s">
-                <h3>Megbízhatóság</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3><%- @__("section.support.trustworthiness")%></h3>	
+                <p><%- @__("section.support.trustworthiness.description")%></p>
             </div>
             <div class="col-md-6 image">
                 <img src="img/portfolio/support-group.png" />
@@ -366,7 +362,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Kapcsolat</h2>
+                <h2><%- @__("section.contact-us")%></h2>
                 <hr class="star-primary thick">
             </div>
         </div>
@@ -386,8 +382,8 @@
 				<div class="col-sm-8">
 					<address class="space-bottom">
 						  <strong>KLIX Network Kft.</strong><br>
-						  1132 Budapest, Victor Hugo utca 18-22.<br>
-						  <strong>Telefon:</strong> +36-30-899-3394
+						  1132 Budapest, Victor Hugo <%- @__("section.contact-us.street")%> 18-22.<br>
+						  <strong><%- @__("section.contact-us.phone")%>:</strong> +36-30-899-3394
 						  <div class="divider"></div>
 					  </address>
 					  <address>
