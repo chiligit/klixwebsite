@@ -1,7 +1,7 @@
 {
 	"site.title": "site.title",
 	"section.about-us": "About us",
-	"section.about-us.text": "Lorem ipsum  TODO",
+	"section.about-us.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 	"section.services": "Services",
 	"section.services.server-hosting": "Server hosting",
 	"section.services.server-hosting.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
