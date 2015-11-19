@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var config = require('./config/config.json');
 global.config = config;
 
-//mongoose.connect(config.mongodbUriString);
+mongoose.connect(config.mongodbUriString);
 i18n.configure({
     locales:['en', 'hu'],
     directory: __dirname + '/locales',

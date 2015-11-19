@@ -47,7 +47,7 @@
 				}
 			}
 			else{
-					res.render('index');
+					res.redirect('/');
 			}
         }
 
