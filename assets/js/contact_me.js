@@ -26,7 +26,7 @@ $(function() {
 			var captchaResponse = $("#g-recaptcha-response");
 			if (captchaResponse.val().length != 0)
 	
-			alert(window.location.href);
+			//alert(window.location.href);
             $.ajax({
                 url: window.location.href,
                 type: "POST",
@@ -50,6 +50,8 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger("reset");
+					$('#captcha').html('');
+					$.getScript("https://www.google.com/recaptcha/api.js");
                 },
                 error: function(response) {
                     // Fail message
@@ -60,6 +62,8 @@ $(function() {
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
+					$('#captcha').html('');
+					$.getScript("https://www.google.com/recaptcha/api.js");
                 },
             })
         },

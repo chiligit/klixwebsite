@@ -22,6 +22,7 @@
 	"section.contact-us": "Kapcsolat",
 	"section.contact-us.phone": "Telefon",
 	"section.contact-us.street": "utca",
+	"section.contact-us.email": "info_KUKAC_klixnetwork_PÖTTY_hu",
 	"navigation.homepage": "Vissza a főoldalra",
 	"quotation": "Az emberek túl sok falat építenek, és túl kevés hidat.",
 	"package.details": "Részletek",
@@ -87,6 +88,11 @@
 	"form.response.success": "Az üzenetét megkaptuk!", 
 	"form.response.fail": "Hiba történt az üzenet küldése közben, Kérjük próbálja meg később!",
 	"cookieconsent.message": "Ez az oldal cookie-kat használ, melyekkel még hatékonyabb szolgáltatásokat nyújthatunk. Szolgáltatásaink igénybevételével Ön beleegyezik a cookie-k használatába",
-	"cookieconsent.dismiss": "Elfogadom"
-
+	"cookieconsent.dismiss": "Elfogadom",
+	"footer.impressum" : "Impresszum",
+	"footer.companyname": "A cég neve",
+	"footer.alsocanfindus": "Itt is megtalál minket",
+	"footer.companydata" : "Cégadatok",
+	"footer.taxnumber" : "Adószám",
+	"footer.registrationnumber" : "Cégjegyzékszám"
 }
