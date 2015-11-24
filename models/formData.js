@@ -11,7 +11,7 @@ module.exports = function(app){
 		date : {
 			type : Date,
 			default : Date.now
-		  }
+		}
 	});
 	var FormData = mongoose.model('FormData', formDataSchema )
 
