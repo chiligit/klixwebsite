@@ -3,17 +3,18 @@
 	var Q = require('q');
 	var async = require('async');
 
-	var saveFormData = function(app, type, params){
+	var saveFormData = function(app, type, params,date){
 		
 		var saveData = function(done){
+				console.log('DB:');
 				var newFormData = app.models.formData({
 					type: type,
 					name: params.name,
 					phone: params.phone,
 					email: params.email,
-					message: params.message
+					message: params.message,
+					date: date
 				}).save(function(err) {
-					console.log('DB:');
 					if (err) {
 						throw err;	
 						console.log(err);

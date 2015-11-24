@@ -10,6 +10,14 @@ var config = require('./config/config.json');
 global.config = config;
 
 mongoose.connect(config.mongodbUriString);
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback () {
+       console.log('Connected to MongoDB');
+       return;
+});
+mongoose.set('debug', true);
+
 i18n.configure({
     locales:['en', 'hu'],
     directory: __dirname + '/locales',
@@ -34,6 +42,8 @@ app.set('view engine', 'ect');
 app.engine('ect', ectRenderer.render);
 
 load('services').then('models').then('controllers').then('routes').into(app);
+
+console.log(app.models.formData.count());
 
 app.listen(3000);
 console.log('Listening on port 3000');

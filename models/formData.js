@@ -8,8 +8,12 @@ module.exports = function(app){
 		email: String,
 		phone: String,
 		message: String,
+		date : {
+			type : Date,
+			default : Date.now
+		  }
 	});
-	var FormData = mongoose.model('FomData', formDataSchema )
+	var FormData = mongoose.model('FormData', formDataSchema )
 
 	return FormData;
 }
