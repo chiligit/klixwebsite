@@ -3,7 +3,7 @@
 	var Q = require('q');
 	var async = require('async');
 
-	var saveFormData = function(app, type, params,date){
+	var saveFormData = function(app, type, params){
 		
 		var saveData = function(done){
 				console.log('DB:');
@@ -13,7 +13,6 @@
 					phone: params.phone,
 					email: params.email,
 					message: params.message,
-					date: date
 				}).save(function(err) {
 					if (err) {
 						throw err;	

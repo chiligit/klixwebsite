@@ -27,6 +27,9 @@ i18n.configure({
 
 var app = express();
 var ectRenderer = ECT({ watch: true, root: __dirname + '/views', ext : '.ect' });
+app.set('view engine', 'ect');
+app.engine('ect', ectRenderer.render);
+
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(cookieParser());
@@ -38,12 +41,7 @@ app.use('/img',express.static(path.join(__dirname, 'assets/img')));
 app.use('/js',express.static(path.join(__dirname, 'assets/js')));
 app.use('/lib',express.static(path.join(__dirname, 'assets/lib')));
 
-app.set('view engine', 'ect');
-app.engine('ect', ectRenderer.render);
 
 load('services').then('models').then('controllers').then('routes').into(app);
-
-console.log(app.models.formData.count());
-
 app.listen(3000);
 console.log('Listening on port 3000');
