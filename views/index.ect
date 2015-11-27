@@ -127,9 +127,9 @@
                     <img src="img/portfolio/server-hosting.png" />
                 </div>
                 <div class="col-md-4">
-                    <h3><%- @__("section.services.server-hosting")%></h3>                    
-                    <p><%- @__("section.services.server-hosting.description")%></p>                    
-                </div> 
+                    <h3><%- @__("section.services.server-renting")%></h3>                    
+                    <p><%- @__("section.services.server-renting.description")%></p>                    
+				</div> 
                 <div id="server-hosting-chart" class="col-md-3">
                 </div>
             </div>
@@ -143,23 +143,34 @@
                 </div>
                 <div class="col-md-6">
                     <h3><%- @__("section.services.vps")%></h3>                    
-                    <p><%- @__("section.services.vps.description")%></p>   
-                </div> 
+                    <p><%- @__("section.services.vps.description1")%></p>   
+                    <p><%- @__("section.services.vps.description2")%></p>   
+                    <p><%- @__("section.services.vps.description3")%></p>   
+				</div> 
             </div>
         </div>
       </li>
       <li>
         <div class="container portfolio-one">
             <div class="row">                          
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1">
                     <img src="img/portfolio/domain2.png" />
                 </div>
-                <div class="col-md-4">
-                    <h3><%- @__("section.services.domain")%></h3>                    
-                    <p><%- @__("section.services.domain.description")%></p>   
+                <div class="col-md-9">
+                    <h3><%- @__("section.services.it-service-advisory")%></h3>                    
+                    <p><%- @__("section.services.it-service-advisory.description1")%></p>
+					<ul>
+						<li><%- @__("section.services.it-service-advisory.description2.li1")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li2")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li3")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li4")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li5")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li6")%></li>
+						<li><%- @__("section.services.it-service-advisory.description2.li7")%></li>
+					</ul>
+					<p><%- @__("section.services.it-service-advisory.description3")%></p>
                 </div> 
-                <div id="browser-shares-chart" class="col-md-3">
-                </div>
+                <!--div id="browser-shares-chart" class="col-md-3"></div-->
             </div>
         </div>
       </li>      
@@ -194,13 +205,12 @@
                 <div class="plan wow bounceInDown" data-wow-delay="0.1s" data-wow-offset="100">
                     <h3><%- @__("package.first.name")%></h3>  
                     <ul class="list-table">                        
-                        <li><%- @__("package.first.memory")%></li>
+                        <li><%- @__("package.first.price")%></li>
+						<li><%- @__("package.first.processor")%></li>
+						<li><%- @__("package.first.memory")%></li>
                         <li><%- @__("package.first.disk")%></li>
                         <li><%- @__("package.first.bandwidth")%></li>
-                        <li><%- @__("package.first.domain")%></li>
-                        <li><%- @__("package.first.ip")%></li>
-                        <li><%- @__("package.first.uptime")%></li>
-                        <li><%- @__("package.first.support")%></li>   
+                        <li><%- @__("package.first.storagetech")%></li>
                         <li><%- @__("package.first.other")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.first.id")%>';">                                
@@ -215,13 +225,12 @@
                 <div class="plan wow bounceInDown" data-wow-delay="0.3s" data-wow-offset="100">
                     <h3><%- @__("package.second.name")%></h3>  
                     <ul class="list-table">                        
-                        <li><%- @__("package.second.memory")%></li>
+                        <li><%- @__("package.second.price")%></li>
+						<li><%- @__("package.second.processor")%></li>
+						<li><%- @__("package.second.memory")%></li>
                         <li><%- @__("package.second.disk")%></li>
                         <li><%- @__("package.second.bandwidth")%></li>
-                        <li><%- @__("package.second.domain")%></li>
-                        <li><%- @__("package.second.ip")%></li>
-                        <li><%- @__("package.second.uptime")%></li>
-                        <li><%- @__("package.second.support")%></li>   
+                        <li><%- @__("package.second.storagetech")%></li>
                         <li><%- @__("package.second.other")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.second.id")%>';">                                
@@ -236,13 +245,12 @@
                 <div class="plan wow bounceInDown" data-wow-delay="0.5s" data-wow-offset="100">
                     <h3><%- @__("package.third.name")%></h3>  
                     <ul class="list-table">                        
-                        <li><%- @__("package.third.memory")%></li>
+                        <li><%- @__("package.third.price")%></li>
+						<li><%- @__("package.third.processor")%></li>
+						<li><%- @__("package.third.memory")%></li>
                         <li><%- @__("package.third.disk")%></li>
                         <li><%- @__("package.third.bandwidth")%></li>
-                        <li><%- @__("package.third.domain")%></li>
-                        <li><%- @__("package.third.ip")%></li>
-                        <li><%- @__("package.third.uptime")%></li>
-                        <li><%- @__("package.third.support")%></li>   
+                        <li><%- @__("package.third.storagetech")%></li>
                         <li><%- @__("package.third.other")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.third.id")%>';">                                
@@ -257,13 +265,12 @@
                 <div class="plan custom wow bounceInDown" data-wow-delay="0.7s" data-wow-offset="100">
                     <h3><%- @__("package.fourth.name")%></h3>  
                     <ul class="list-table">                        
-                        <li><%- @__("package.fourth.memory")%></li>
+                        <li><%- @__("package.fourth.price")%></li>
+						<li><%- @__("package.fourth.processor")%></li>
+						<li><%- @__("package.fourth.memory")%></li>
                         <li><%- @__("package.fourth.disk")%></li>
                         <li><%- @__("package.fourth.bandwidth")%></li>
-                        <li><%- @__("package.fourth.domain")%></li>
-                        <li><%- @__("package.fourth.ip")%></li>
-                        <li><%- @__("package.fourth.uptime")%></li>
-                        <li><%- @__("package.fourth.support")%></li>   
+                        <li><%- @__("package.fourth.storagetech")%></li>
                         <li><%- @__("package.fourth.other")%></li>
                         <li>
                             <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan?package=<%- @__("package.fourth.id")%>';">                                
@@ -284,7 +291,8 @@
             <div class="col-md-12 text-center">
                 <h2><%- @__("section.support")%></h2>
                 <hr class="star-primary">                
-                <h3><%- @__("section.support.emergencyphone")%>: +36-80-123-4567</h3>
+                <h3><%- @__("section.support.emergency-email")%>:  <a href="mailto:info@klixnetwork.hu">info@klixnetwork.hu</a></h3>
+                <h3><%- @__("section.support.emergency-phone")%>: +36-30-899-3394</h3>
                 <hr class="star-red">
             </div>
         </div>
@@ -307,8 +315,8 @@
         </div>
         <div class="row">            
             <div class="col-md-6 text wow bounceInRight" data-wow-delay="0.3s">
-                <h3><%- @__("section.support.trustworthiness")%></h3>	
-                <p><%- @__("section.support.trustworthiness.description")%></p>
+                <h3><%- @__("section.support.reliability")%></h3>	
+                <p><%- @__("section.support.reliability.description")%></p>
             </div>
             <div class="col-md-6 image">
                 <img src="img/portfolio/support-group.png" />
@@ -332,23 +340,23 @@
       <div class="container">
 
           <div class="map-info-box dark-skin">
-              <div class="inline map-info-box-logo">
-                  <img class="img-responsive white" src="img/logo_white.png" alt="">
-              </div>
+		    <div class="row">
+				  <div class="col-sm-6 inline map-info-box-logo">
+					  <img class="img-responsive white" src="img/logo_white.png" alt="">
+				  </div>
+				  <div class="col-sm-6 map-info-box-qrcode">
+						<img class="img-responsive white" src="img/qr_code.jpg" alt="">
+				  </div>
+			</div>
               <div class="inline row">
-				<div class="col-sm-4 map-info-box-qrcode">
-					<img class="img-responsive white" src="img/qr_code.jpg" alt="">
-				</div>
-				<div class="col-sm-8">
+			  <div class="divider"></div>
+				<div class="col-sm-12">
 					<address class="space-bottom">
-						  <strong>KLIX Network Kft.</strong><br>
-						  1132 Budapest, Victor Hugo <%- @__("section.contact-us.street")%> 18-22.<br>
-						  <strong><%- @__("section.contact-us.phone")%>:</strong> +36-30-899-3394
-						  <div class="divider"></div>
-					  </address>
-					  <address>
-						  <a href="mailto:<%- @__("section.contact-us.email")%>"><%- @__("section.contact-us.email")%></a>
-					  </address>
+						<strong>KLIX Network Kft.</strong><br>
+						1132 Budapest, Victor Hugo <%- @__("section.contact-us.street")%> 11-15.<br>
+						<strong><%- @__("section.contact-us.phone")%>: </strong> +36-30-899-3394 <br>
+						<strong><%- @__("section.contact-us.email")%>: <a href="mailto:info@klixnetwork.hu">info@klixnetwork.hu</a></h3>
+					</address>
 				</div>
               </div>
           </div>
