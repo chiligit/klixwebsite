@@ -59,17 +59,18 @@
             <div class="col-md-6 text-center">                   
                 <ul class="list-table">                        
                     <li><%- @__("package."+ @package + ".name")%></li>
+                    <li><%- @__("package."+ @package + ".price")%></li>
                     <li><%- @__("package."+ @package + ".processor")%></li>
                     <li><%- @__("package."+ @package + ".memory")%></li>
-                    <li><%- @__("package."+ @package + ".disk")%></li>                    
                 </ul>
             </div>
             <div class="col-md-6 text-center">
                 <ul class="list-table">                
-                    <li><%- @__("package."+ @package + ".bandwidth")%></li>
+                    <li><%- @__("package."+ @package + ".disk")%></li>                    
+					<li><%- @__("package."+ @package + ".bandwidth")%></li>
                     <li><%- @__("package."+ @package + ".storagetech")%></li>
                     <li><%- @__("package."+ @package + ".other")%></li>
-                </ul>
+				</ul>
             </div>
         </div>
 		
