@@ -422,3 +422,8 @@ Google MAP & Info Box
 .language-logo {
 	padding-left:25px;
 }
+
+/* FF bug */
+.wow {
+   visibility: hidden;
+}
