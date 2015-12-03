@@ -228,8 +228,10 @@ Google MAP & Info Box
   margin-bottom: 10px;
 }
 
-.intro-text .skills {
-  letter-spacing: 0.1em;
+.skills {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 29px;
 }
 
 #about {

@@ -1,8 +1,9 @@
 {
 	"site.title": "KLIXNetwork - server hosting, VPS, domain",
 	"section.about-us": "About us",
-	"section.about-us.text": "Our purpose and philosophy is to provide flexible and safe service to our Customers that allow them to leave their business comfort zone in order to ensure and foster company development to achieve success.",
+	"section.about-us.text": "Our purpose and philosophy is to provide flexible and safe service to our Customers that allow them to leave their business comfort zone in order to ensure and foster company development to achieve success.<br> Therefore we always follow and use the latest technology standards.",
 	"section.services": "Services",
+	"section.services.list": "Renting Dedicated Servers - Renting VPS - Hosting - Customized Environment - IT service and advisory",
 	"section.services.server-renting": "Renting dedicated servers",
 	"section.services.server-renting.description": "We propose this service to those customers who are interested in having full control of a server with keeping the investments cost low. This can be achieved through a monthly payment construction and, at the same time, the cost will remain easily plannable.",
 	"section.services.vps": "VPS",

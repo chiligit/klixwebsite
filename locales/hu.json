@@ -1,8 +1,9 @@
 {
 	"site.title": "KLIXNetwork - server hosting, VPS, domain",
 	"section.about-us": "Rólunk",
-	"section.about-us.text": "Célunk és egyben filozófiánk is az, hogy ügyfeleink olyan rugalmas és biztonságos szolgáltatáshoz jussanak, amellyel  bátran kiléphetnek üzleti komfort zónájukból és ezzel lehetőséget biztosítsanak további fejlődésükhöz, gyarapodásukhoz.",
+	"section.about-us.text": "Célunk és egyben filozófiánk is az, hogy ügyfeleink olyan rugalmas és biztonságos szolgáltatáshoz jussanak, amellyel  bátran kiléphetnek üzleti komfort zónájukból és ezzel lehetőséget biztosítsanak további fejlődésükhöz, gyarapodásukhoz.<br> Ezért cégünk mindig is az aktuális iparági sztenderdeket követi és alkalmazza.",
 	"section.services": "Szolgáltatások",
+	"section.services.list": "Dedikált szerverek - VPS - Hosting - Egyedi tesztkörnyezet - IT szolgáltatás és tanácsadás",
 	"section.services.server-renting": "Server bérlés",
 	"section.services.server-renting.description": "Dedikált szerver szolgáltatásunkat leginkább azoknak ajánljuk, akiknek úgy van szükségük egy önálló szerverre, hogy a beruházás magas költségeit megspórolják. Ez a havidíjas bérleti konstrukcióval elérhető és egyúttal a költségek jól tervezhetők maradnak.",
 	"section.services.vps": "VPS",
