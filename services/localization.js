@@ -7,4 +7,5 @@ module.exports = function(app){
 		updateFiles: false
 	});
 	app.use(i18n.init);
+	i18n.setLocale('hu');
 }

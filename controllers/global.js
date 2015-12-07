@@ -88,7 +88,7 @@
 			if (req.method == 'POST') {
 					postCall(req,res,'contact_us');
 			} else {
-			  res.render('index');
+				res.render('index');
 			}
         },
 
