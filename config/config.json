@@ -2,7 +2,7 @@
   "mongodbUriString" : "mongodb://mongodb/klix",
   "user": "klixnetworkklix@gmail.com",
   "redis" : {
-	"host": "redis",
+	"host": "redis1",
 	"port": "6379",
         "cookieMaxAge": 604800000
   }
