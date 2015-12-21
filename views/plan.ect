@@ -51,25 +51,18 @@
             </div>
         </div>
         <div class="row details">  
-            <div class="col-md-8 col-md-offset-2">   
-                <p><%- @__("package."+ @package + ".description")%></p>
+            <div class="col-md-8 col-md-offset-2 text-center">   
+                <p><%- @__("package."+ @package + ".details.description.pre")%> <%- @__("package."+ @package + ".name")%> <%- @__("package."+ @package + ".details.description")%></p>
             </div>
         </div>
         <div class="row">     
-            <div class="col-md-6 text-center">                   
+            <div class="col-md-6 col-md-offset-3 text-center">                   
                 <ul class="list-table">                        
-                    <li><%- @__("package."+ @package + ".name")%></li>
-                    <li><%- @__("package."+ @package + ".price")%></li>
-                    <li><%- @__("package."+ @package + ".processor")%></li>
-                    <li><%- @__("package."+ @package + ".memory")%></li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-center">
-                <ul class="list-table">                
-                    <li><%- @__("package."+ @package + ".disk")%></li>                    
-					<li><%- @__("package."+ @package + ".bandwidth")%></li>
-                    <li><%- @__("package."+ @package + ".storagetech")%></li>
-                    <li><%- @__("package."+ @package + ".other")%></li>
+                    <li><%- @__("package."+ @package + ".details.description2")%></li>
+                    <li><%- @__("package."+ @package + ".details.description3")%></li>
+                    <li><%- @__("package."+ @package + ".details.description4")%></li>
+                    <li><%- @__("package."+ @package + ".details.description5")%></li>
+                    <li><%- @__("package."+ @package + ".details.description6")%></li>
 				</ul>
             </div>
         </div>
@@ -78,8 +71,7 @@
 			<div class="col-md-12 text-center">
 				<hr class="star-primary thick">
 				<h2><%- @__("form.inquiry")%>:</h2>
-				<p id="inquirydescription"><%- @__("form.inquiry.description")%></p>				
-				<br/>             
+				<p id="inquirydescription"><%- @__("form.inquiry.description")%></p>				          
 			</div>
 		</div>
 		<% include 'form.ect' %>

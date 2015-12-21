@@ -160,6 +160,37 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+	.nav navbar-nav navbar-right {
+		float: right!important;
+		margin-right: -15px;
+	}
+	
+	.navbar .navbar-nav li {
+		display: inline-block;   
+		float: none;
+		font-size: 11px;
+		letter-spacing:0.5px;
+	}
+	
+	.navbar-nav li a {
+		padding: 14px 7px 7px 7px;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+	.navbar .navbar-nav li {
+		letter-spacing:1px;
+		float: left;
+		font-size:16px;
+	}
+	
+		.navbar-nav li a {
+		padding: 15px;
+	}
+
 }
 
 .navbar {
@@ -177,14 +208,14 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
-    letter-spacing: 1px;   
+    /*letter-spacing: 1px;*/   
     float: none!important;
-    margin: 0px auto;     
+    /*margin: 0px auto;*/     
 }
 
 .navbar .navbar-nav li {
     display: inline-block;   
-    float: none; 
+    float: none;
 }
 
 .navbar .navbar-nav li a {
@@ -294,8 +325,27 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
+	
+	.navbar-collapse {
+		margin-top:20px;
+		text-align: center;
+		background-color: #FDFDFD;
+	}
+	
+	.navbar-brand img.white {
+		display: block;
+		height: 70px;
+		margin-top: 10px;
+	}
+	
+	.navbar-shrink .navbar-brand img.black {
+		display: block;
+		height: 65px;
+		margin: 5px 0px 10px 5px;
+	}
+	
 }
-
+	
 #portfolio .portfolio-item {
     right: 0;
     padding: 25px;

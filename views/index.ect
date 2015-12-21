@@ -123,15 +123,15 @@
       <li>
         <div class="container portfolio-one">
             <div class="row">                          
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-4 col-md-offset-2">
                     <img src="img/portfolio/server-hosting.png" />
                 </div>
                 <div class="col-md-4">
                     <h3><%- @__("section.services.server-renting")%></h3>                    
                     <p><%- @__("section.services.server-renting.description")%></p>                    
 				</div> 
-                <div id="server-hosting-chart" class="col-md-3">
-                </div>
+                <!--div id="server-hosting-chart" class="col-md-3">
+                </div-->
             </div>
         </div>
       </li>      
@@ -157,18 +157,17 @@
                     <img src="img/portfolio/domain2.png" />
                 </div>
                 <div class="col-md-9">
-                    <h3><%- @__("section.services.it-service-advisory")%></h3>                    
-                    <p><%- @__("section.services.it-service-advisory.description1")%></p>
+                    <h3><%- @__("section.services.consultancy")%></h3>                    
+                    <p><%- @__("section.services.consultancy.description1")%></p>
 					<ul>
-						<li><%- @__("section.services.it-service-advisory.description2.li1")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li2")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li3")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li4")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li5")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li6")%></li>
-						<li><%- @__("section.services.it-service-advisory.description2.li7")%></li>
+						<li><%- @__("section.services.consultancy.description2.li1")%></li>
+						<li><%- @__("section.services.consultancy.description2.li2")%></li>
+						<li><%- @__("section.services.consultancy.description2.li3")%></li>
+						<li><%- @__("section.services.consultancy.description2.li4")%></li>
+						<li><%- @__("section.services.consultancy.description2.li5")%></li>
+						<li><%- @__("section.services.consultancy.description2.li6")%></li>
+						<li><%- @__("section.services.consultancy.description2.li7")%></li>
 					</ul>
-					<!--p><%- @__("section.services.it-service-advisory.description3")%></p-->
                 </div> 
                 <!--div id="browser-shares-chart" class="col-md-3"></div-->
             </div>
@@ -204,13 +203,12 @@
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.1s" data-wow-offset="100">
                     <h3><%- @__("package.first.name")%></h3>  
-                    <ul class="list-table">                        
+                    <ul class="list-table">
+						<li><%- @__("package.first.price")%></li>					
 						<li><%- @__("package.first.processor")%></li>
 						<li><%- @__("package.first.memory")%></li>
                         <li><%- @__("package.first.disk")%></li>
-                        <li><%- @__("package.first.bandwidth")%></li>
-                        <li><%- @__("package.first.storagetech")%></li>
-                        <li><%- @__("package.first.other")%></li>
+						<li><%- @__("package.first.disktype")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.first.id")%>';">                                
                                 <%- @__("package.details")%>
@@ -223,13 +221,12 @@
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.3s" data-wow-offset="100">
                     <h3><%- @__("package.second.name")%></h3>  
-                    <ul class="list-table">                        
+                    <ul class="list-table">
+						<li><%- @__("package.second.price")%></li>						
 						<li><%- @__("package.second.processor")%></li>
 						<li><%- @__("package.second.memory")%></li>
                         <li><%- @__("package.second.disk")%></li>
-                        <li><%- @__("package.second.bandwidth")%></li>
-                        <li><%- @__("package.second.storagetech")%></li>
-                        <li><%- @__("package.second.other")%></li>
+                        <li><%- @__("package.second.disktype")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.second.id")%>';">                                
                                 <%- @__("package.details")%>
@@ -242,13 +239,12 @@
             <div class="col-md-3">
                 <div class="plan wow bounceInDown" data-wow-delay="0.5s" data-wow-offset="100">
                     <h3><%- @__("package.third.name")%></h3>  
-                    <ul class="list-table">                        
+                    <ul class="list-table">
+						<li><%- @__("package.third.price")%></li>						
 						<li><%- @__("package.third.processor")%></li>
 						<li><%- @__("package.third.memory")%></li>
                         <li><%- @__("package.third.disk")%></li>
-                        <li><%- @__("package.third.bandwidth")%></li>
-                        <li><%- @__("package.third.storagetech")%></li>
-                        <li><%- @__("package.third.other")%></li>
+                        <li><%- @__("package.third.disktype")%></li>
                         <li>
                             <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.third.id")%>';">                                
                                 <%- @__("package.details")%>
@@ -261,13 +257,9 @@
             <div class="col-md-3">
                 <div class="plan custom wow bounceInDown" data-wow-delay="0.7s" data-wow-offset="100">
                     <h3><%- @__("package.fourth.name")%></h3>  
-                    <ul class="list-table">                        
-						<li><%- @__("package.fourth.processor")%></li>
-						<li><%- @__("package.fourth.memory")%></li>
-                        <li><%- @__("package.fourth.disk")%></li>
-                        <li><%- @__("package.fourth.bandwidth")%></li>
-                        <li><%- @__("package.fourth.storagetech")%></li>
-                        <li><%- @__("package.fourth.other")%></li>
+                    <ul class="list-table">
+						<li><%- @__("package.fourth.description1")%></li>
+						<li><%- @__("package.fourth.description2")%></li>						
                         <li>
                             <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan?package=<%- @__("package.fourth.id")%>';">                                
                                 <%- @__("package.details")%>
@@ -288,34 +280,34 @@
                 <h2><%- @__("section.support")%></h2>
                 <hr class="star-primary">                
                 <h3><%- @__("section.support.emergency-email")%>:  <a href="mailto:info@klixnetwork.hu">info@klixnetwork.hu</a></h3>
-                <h3><%- @__("section.support.emergency-phone")%>: +36-30-899-3394</h3>
                 <hr class="star-red">
             </div>
         </div>
         <div class="row">            
             <div class="col-md-6 text wow bounceInRight" data-wow-delay="0.2s">
-                <h3><%- @__("section.support.outstanding-availability")%></h3>	
-                <p><%- @__("section.support.outstanding-availability.description")%></p>            </div>
+                <h3><%- @__("section.support.availability")%></h3>	
+                <p><%- @__("section.support.availability.description")%></p>            </div>
             <div class="col-md-6 image">
                 <img src="img/portfolio/uptime.png" />
             </div>
         </div>
         <div class="row">            
             <div class="col-md-6 image">
-                <img src="img/portfolio/customer-support.png" />                
+                <img src="img/portfolio/support-group.png" />                
             </div>
             <div class="col-md-6 text wow bounceInLeft" data-wow-delay="0.3s">
-                <h3><%- @__("section.support.customer-service")%></h3>	
-                <p><%- @__("section.support.customer-service.description")%></p>
+				<h3><%- @__("section.support.reliability")%></h3>	
+                <p><%- @__("section.support.reliability.description")%></p>
+
             </div>
         </div>
         <div class="row">            
             <div class="col-md-6 text wow bounceInRight" data-wow-delay="0.3s">
-                <h3><%- @__("section.support.reliability")%></h3>	
-                <p><%- @__("section.support.reliability.description")%></p>
+			    <h3><%- @__("section.support.assistance")%></h3>	
+                <p><%- @__("section.support.assistance.description")%></p>
             </div>
             <div class="col-md-6 image">
-                <img src="img/portfolio/support-group.png" />
+                <img src="img/portfolio/customer-support.png" />
             </div>
         </div>        
     </div>

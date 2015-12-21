@@ -210,19 +210,20 @@
             setTimeout(function() {
                 about_offset = aboutbg[0].getBoundingClientRect().top;
                 technology_offset = $('#technology')[0].getBoundingClientRect().top;
-                /*
+                console.log(technology_offset);
+				/*
                 console.log(_docu.scrollTop());
                 console.log(about_offset);
                 console.log(technology_offset);
                 console.log(technology_offset-about_offset);
                 */
                 if(iconbg.css('backgroundPositionY')) {                       
-                    technology1bg.css('backgroundPositionY',  (2550+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPositionY',  (1950+(about_offset)/5*7.5) + 'px');
+                    technology1bg.css('backgroundPositionY',  (2600+(about_offset)/5*10) + 'px');            
+                    technology2bg.css('backgroundPositionY',  (2000+(about_offset)/5*7.5) + 'px');
                 }
                 else {                    
-                    technology1bg.css('backgroundPosition',  'center ' + parseInt(2550+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPosition',  'center ' + parseInt(1950+(about_offset)/5*7.5) + 'px');   
+                    technology1bg.css('backgroundPosition',  'center ' + parseInt(2600+(about_offset)/5*10) + 'px');            
+                    technology2bg.css('backgroundPosition',  'center ' + parseInt(2000+(about_offset)/5*7.5) + 'px');   
                 }
 
                 if(iconbg.css('backgroundPositionY'))
