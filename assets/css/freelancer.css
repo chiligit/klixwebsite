@@ -329,13 +329,12 @@ section.success a.active {
 	.navbar-collapse {
 		margin-top:20px;
 		text-align: center;
-		background-color: #FDFDFD;
+		background-color: #A2A2A2;
 	}
 	
 	.navbar-brand img.white {
 		display: block;
 		height: 70px;
-		margin-top: 10px;
 	}
 	
 	.navbar-shrink .navbar-brand img.black {
