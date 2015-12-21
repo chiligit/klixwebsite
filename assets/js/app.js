@@ -218,12 +218,12 @@
                 console.log(technology_offset-about_offset);
                 */
                 if(iconbg.css('backgroundPositionY')) {                       
-                    technology1bg.css('backgroundPositionY',  (2600+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPositionY',  (2000+(about_offset)/5*7.5) + 'px');
+                    technology1bg.css('backgroundPositionY',  (2620+(about_offset)/5*10) + 'px');            
+                    technology2bg.css('backgroundPositionY',  (2020+(about_offset)/5*7.5) + 'px');
                 }
                 else {                    
-                    technology1bg.css('backgroundPosition',  'center ' + parseInt(2600+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPosition',  'center ' + parseInt(2000+(about_offset)/5*7.5) + 'px');   
+                    technology1bg.css('backgroundPosition',  'center ' + parseInt(2620+(about_offset)/5*10) + 'px');            
+                    technology2bg.css('backgroundPosition',  'center ' + parseInt(2020+(about_offset)/5*7.5) + 'px');   
                 }
 
                 if(iconbg.css('backgroundPositionY'))
