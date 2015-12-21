@@ -46,7 +46,7 @@
 	"package.first.disk": "max. 12 x HDD/SSD SAS 2.0",
 	"package.first.disktype": "PCIexpress SSD",
 	"package.first.storagetech": "hw RAID",
-	"package.second.details.description.pre": "We recommend <b> ",
+	"package.first.details.description.pre": "We recommend <b> ",
 	"package.first.details.description": "</b> server when a powerful hardware source is needed.",
 	"package.first.details.description2": "Long term contract and loyalty contract is not needed.",
 	"package.first.details.description3": "We give 1 month for free in case of prepayment for 12 month.",
