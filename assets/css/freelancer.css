@@ -335,6 +335,7 @@ section.success a.active {
 	.navbar-brand img.white {
 		display: block;
 		height: 70px;
+		margin-top: 0px;
 	}
 	
 	.navbar-shrink .navbar-brand img.black {
