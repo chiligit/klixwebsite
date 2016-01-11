@@ -9,7 +9,6 @@
 	background: none;
 	border: none;
 	box-shadow: none;
-	height: 400px;
 	padding: 30px;
 }
 
@@ -166,20 +165,102 @@ Google MAP & Info Box
 		margin: 0;
 		font-size: 1.5em;
 	}
+	
+	h3 {
+		font-size: 18px;
+	}
 
-
+	p {
+		font-size: 14px;
+	}
 }
 
 @media(max-width:900px) {
- #technology1_bg {
-	 display:none !important;
+	 #technology1_bg {
+		 display:none !important;
+	 }
+	 
+	  #technology2_bg {
+		 display:none !important;
+	 }
+
+	  #technology img {  
+		margin: 25px 0;
+		max-height: 700px;
+		display:block;
+	 }
+ 
+	 .bx-wrapper .bx-controls-direction a {
+		/* margin: 30px; */
+		position: absolute;
+		top: -46px;
+	}
+ 
+	 .bx-wrapper .bx-controls-direction a {
+		/* width: 64px; */
+		height: 64px;
+		background-size: 70%;
+	}
+ 
+	 .bx-wrapper .bx-next::before {
+		content: "";
+		position: absolute;
+		right: 0px;
+		width: 64px;
+		height: 64px;
+		background: url('/img/icons/right-arrow-icon-blue.png') no-repeat;
+		background-size: 70%;
+		opacity: 0;
+		z-index: 3;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+ 	 .bx-wrapper .bx-prev::before {
+		content: "";
+		position: absolute;
+		right: 0px;
+		width: 64px;
+		height: 64px;
+		background: url('/img/icons/right-arrow-icon-blue.png') no-repeat;
+		background-size: 70%;
+		opacity: 0;
+		z-index: 3;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+ 
+	 section {
+		padding: 40px 0;
+	}
+ 
+}
+
+	 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right: 50%;
+		top: 0px;
+		width: 35px;
+	}
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		text-align: left;
+		width: 100%; 
+		text-align: center;
+	}
+	
+
+#technology imgage {  
+	display:
+}
+@media(min-width:901px) {
+
+  #technology img {  
+	display:none;
  }
  
-  #technology2_bg {
-	 display:none !important;
- }
-
-
 }
 
 
@@ -270,9 +351,7 @@ Google MAP & Info Box
    text-align: justify;
 }
 
-#portfolio .container img {
-  margin-top: 50px;
-}
+
 
 #portfolio li {
     font-size: 20px;
@@ -297,7 +376,7 @@ Google MAP & Info Box
 
 #technology img {  
   margin: 25px 0;
-  max-height: 150px;
+  max-height: 690px;
 }
 
 #technology1_bg {
