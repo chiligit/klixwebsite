@@ -155,11 +155,34 @@ Google MAP & Info Box
     min-height: 100%;
   }
 }
-@media screen and (max-width: 680px) {
-  .map-info-box {
+
+@media screen and (max-width: 500px) {
+
+ .map-info-box {
     display: none;
   }
+
+	section h2 {
+		margin: 0;
+		font-size: 1.5em;
+	}
+
+
 }
+
+@media(max-width:900px) {
+ #technology1_bg {
+	 display:none !important;
+ }
+ 
+  #technology2_bg {
+	 display:none !important;
+ }
+
+
+}
+
+
 .map-info-box.dark-skin address,
 .map-info-box.dark-skin .map-info-box-logo {
   color: #fff;
@@ -286,6 +309,7 @@ Google MAP & Info Box
   height:100vh;
   background:url("/img/technologies1_bg.png") no-repeat;
   background-position: center 0px;
+  display: block;
 }
 
 #technology2_bg {
