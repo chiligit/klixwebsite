@@ -256,13 +256,21 @@ Google MAP & Info Box
 	}
 
 	header .container {
-		padding-top: 70px;
+		padding-top: 75px;
 		padding-bottom: 0px;
 	}
 
+	header .intro-text .name {
+		display: block;
+		text-transform: uppercase;
+		font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 2.0em;
+		font-weight: 700;
+	}
+	
 	.quote {
-		margin-bottom: 0px;
-}
+		margin-bottom: 0px !important;
+	}
 	
 }
 
