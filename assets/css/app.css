@@ -184,6 +184,7 @@ Google MAP & Info Box
   
 }
 
+
 @media screen and (max-width: 500px) {
 
 	#rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}
@@ -331,7 +332,7 @@ Google MAP & Info Box
 	 .bx-wrapper .bx-controls-direction a {
 		/* margin: 30px; */
 		position: absolute;
-		top: -46px;
+		top: -50px;
 	}
  
 	 .bx-wrapper .bx-controls-direction a {
