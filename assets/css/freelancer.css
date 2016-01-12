@@ -40,20 +40,22 @@ h6 {
 hr {
     border: none;
     height: 42px;
-    width: 412px;    
     margin: 0 auto 10px auto;    
 }
 
 hr.star-light {
     background: url("/img/gfx/separator_white.png") no-repeat;
+	background-position: center;
 }
 
 hr.star-red {
     background: url("/img/gfx/separator_red.png") no-repeat;
+	background-position: center;
 }
 
 hr.star-primary {
     background: url("/img/gfx/separator_blue.png") no-repeat;
+	background-position: center;
 }
 
 hr.star-light.thick, hr.star-primary.thick, hr.star-red.thick {
@@ -70,7 +72,7 @@ hr.star-red:after {
     content: "\f005";
     display: inline-block;
     position: relative;    
-    padding: 0 0 0 10px;
+    padding: 0 0 0 3px;
     font-family: FontAwesome;
     font-size: 2em;
 }
@@ -114,7 +116,7 @@ header .intro-text .name {
     display: block;
     text-transform: uppercase;    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
@@ -299,7 +301,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 /*
 section.success {
@@ -491,7 +493,7 @@ footer .footer-above {
 }
 
 footer .footer-col {
-    margin-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 footer .footer-below {

@@ -180,119 +180,19 @@
 			document.onmousewheel = doScroll;
 		};
 
-    var class_ParallaxScroll = function()
-		{
-			var scrollDif, lastScrollTop,
-                about_offset, technology_offset, 
-                bgTopOffset_base, bgTopOffset_icon, bgTopOffset_about, bgTopOffset_technology1, bgTopOffset_technology2,
-                bgOffset, parallax, 
-                basebg, iconbg, aboutbg, technology1bg, technology2bg, 
-                _docu, aboutbg_height;
-		
-			parallax = 5;
-			basebg = $('#base_bg');
-			iconbg = $('#icon_bg');
-            aboutbg = $('#about');
-            technology1bg = $('#technology1_bg');
-            technology2bg = $('#technology2_bg');
-
-            _docu = $(document);
-            
-            if(iconbg.css('backgroundPositionY')) {                       
-                technology1bg.css('backgroundPositionY',  (9999) + 'px');            
-                technology2bg.css('backgroundPositionY',  (9999) + 'px');
-            }
-            else {                    
-                technology1bg.css('backgroundPosition',  'center ' + parseInt(9999) + 'px');            
-                technology2bg.css('backgroundPosition',  'center ' + parseInt(9999) + 'px');   
-            }     
-                            
-            setTimeout(function() {
-                about_offset = aboutbg[0].getBoundingClientRect().top;
-                technology_offset = $('#technology')[0].getBoundingClientRect().top;
-                console.log(technology_offset);
-				/*
-                console.log(_docu.scrollTop());
-                console.log(about_offset);
-                console.log(technology_offset);
-                console.log(technology_offset-about_offset);
-                */
-                if(iconbg.css('backgroundPositionY')) {                       
-                    technology1bg.css('backgroundPositionY',  (2620+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPositionY',  (2020+(about_offset)/5*7.5) + 'px');
-                }
-                else {                    
-                    technology1bg.css('backgroundPosition',  'center ' + parseInt(2620+(about_offset)/5*10) + 'px');            
-                    technology2bg.css('backgroundPosition',  'center ' + parseInt(2020+(about_offset)/5*7.5) + 'px');   
-                }
-
-                if(iconbg.css('backgroundPositionY'))
-                {
-                    bgTopOffset_base = parseInt(basebg.css('backgroundPositionY'));
-                    bgTopOffset_icon = parseInt(iconbg.css('backgroundPositionY'));
-                    bgTopOffset_about = parseInt(aboutbg.css('backgroundPositionY'));
-                    bgTopOffset_technology1 = parseInt(technology1bg.css('backgroundPositionY'));
-                    bgTopOffset_technology2 = parseInt(technology2bg.css('backgroundPositionY'));
-                }
-                else
-                {
-                    bgTopOffset_base = parseInt(basebg.css('backgroundPosition').split(' ')[1]);
-                    bgTopOffset_icon = parseInt(iconbg.css('backgroundPosition').split(' ')[1]);
-                    bgTopOffset_about = parseInt(aboutbg.css('backgroundPosition').split(' ')[1]);
-                    bgTopOffset_technology1 = parseInt(technology1bg.css('backgroundPosition').split(' ')[1]);
-                    bgTopOffset_technology2 = parseInt(technology2bg.css('backgroundPosition').split(' ')[1]);
-                }
-
-            }, 1000);     
-           
-					
-			var scroll = function()
-			{				
-				scrollDif = lastScrollTop - _docu.scrollTop();
-                bgOffset = scrollDif / parallax;
-
-                if (!isNaN(bgOffset)) {
-    				bgTopOffset_base += bgOffset;
-                    bgTopOffset_icon += bgOffset * 2;
-                    bgTopOffset_technology1 += bgOffset * 10;
-                    bgTopOffset_technology2 += bgOffset * 7.5;                    
-                    								
-                    bgTopOffset_about += bgOffset*1.75;
-                    if (bgTopOffset_about>0) {
-                        bgTopOffset_about = 0;
-                    }
-                }
-
-                //console.log(bgTopOffset_technology1);
-					
-				if(iconbg.css('backgroundPositionY')) 
-				{
-					basebg.css('backgroundPositionY',  bgTopOffset_base + 'px');
-					iconbg.css('backgroundPositionY',  bgTopOffset_icon + 'px');
-                    aboutbg.css('backgroundPositionY',  bgTopOffset_about + 'px');
-                    technology1bg.css('backgroundPositionY',  bgTopOffset_technology1 + 'px');
-                    technology2bg.css('backgroundPositionY',  bgTopOffset_technology2 + 'px');
-				}
-				else
-				{
-					basebg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_base) + 'px');
-					iconbg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_icon) + 'px');
-                    aboutbg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_about) + 'px');
-                    technology1bg.css('backgroundPosition',  'center ' + parseInt(bgTopOffset_technology1) + 'px');
-                    technology2bg.css('backgroundPosition',  'center ' + parseInt(bgTopOffset_technology2) + 'px');
-				}
-
-				lastScrollTop = _docu.scrollTop();
-			};
-			
-			$(window).scroll(function()
-			{			
-				scroll();			
-			});                    
-		};
+	
 		
 		// init parallax background
-		var pageBackground = new class_ParallaxScroll();	
+		var pageBackground;
+		
+		checkWindowSize();
+		
+		$(window).on('resize', function(){
+			if ($( window ).width() > 880) 
+			{
+				new class_ParallaxScroll();	
+			}
+		});
 		// init kinetic scroll
 		var pageScroll = new class_KineticScroll();
 		//slider
@@ -321,6 +221,125 @@
 	
 		
 });
+
+	var checkWindowSize = function() {
+		if ($( window ).width() > 880) 
+			{
+				new class_ParallaxScroll();	
+			}
+	}
+
+	var class_ParallaxScroll = function()
+	{
+		var scrollDif, lastScrollTop,
+			about_offset, technology_offset, 
+			bgTopOffset_base, bgTopOffset_icon, bgTopOffset_about, bgTopOffset_technology1, bgTopOffset_technology2,
+			bgOffset, parallax, 
+			basebg, iconbg, aboutbg, technology1bg, technology2bg, 
+			_docu, aboutbg_height;
+	
+		parallax = 5;
+		basebg = $('#base_bg');
+		iconbg = $('#icon_bg');
+		aboutbg = $('#about');
+		technology1bg = $('#technology1_bg');
+		technology2bg = $('#technology2_bg');
+
+		_docu = $(document);
+		
+		if(iconbg.css('backgroundPositionY')) {                       
+			technology1bg.css('backgroundPositionY',  (9999) + 'px');            
+			technology2bg.css('backgroundPositionY',  (9999) + 'px');
+		}
+		else {                    
+			technology1bg.css('backgroundPosition',  'center ' + parseInt(9999) + 'px');            
+			technology2bg.css('backgroundPosition',  'center ' + parseInt(9999) + 'px');   
+		}     
+						
+		setTimeout(function() {
+			about_offset = aboutbg[0].getBoundingClientRect().top;
+			technology_offset = $('#technology')[0].getBoundingClientRect().top;
+			console.log(technology_offset);
+			/*
+			console.log(_docu.scrollTop());
+			console.log(about_offset);
+			console.log(technology_offset);
+			console.log(technology_offset-about_offset);
+			*/
+			if(iconbg.css('backgroundPositionY')) {                       
+				technology1bg.css('backgroundPositionY',  (2620+(about_offset)/5*10) + 'px');            
+				technology2bg.css('backgroundPositionY',  (2020+(about_offset)/5*7.5) + 'px');
+			}
+			else {                    
+				technology1bg.css('backgroundPosition',  'center ' + parseInt(2620+(about_offset)/5*10) + 'px');            
+				technology2bg.css('backgroundPosition',  'center ' + parseInt(2020+(about_offset)/5*7.5) + 'px');   
+			}
+
+			if(iconbg.css('backgroundPositionY'))
+			{
+				bgTopOffset_base = parseInt(basebg.css('backgroundPositionY'));
+				bgTopOffset_icon = parseInt(iconbg.css('backgroundPositionY'));
+				bgTopOffset_about = parseInt(aboutbg.css('backgroundPositionY'));
+				bgTopOffset_technology1 = parseInt(technology1bg.css('backgroundPositionY'));
+				bgTopOffset_technology2 = parseInt(technology2bg.css('backgroundPositionY'));
+			}
+			else
+			{
+				bgTopOffset_base = parseInt(basebg.css('backgroundPosition').split(' ')[1]);
+				bgTopOffset_icon = parseInt(iconbg.css('backgroundPosition').split(' ')[1]);
+				bgTopOffset_about = parseInt(aboutbg.css('backgroundPosition').split(' ')[1]);
+				bgTopOffset_technology1 = parseInt(technology1bg.css('backgroundPosition').split(' ')[1]);
+				bgTopOffset_technology2 = parseInt(technology2bg.css('backgroundPosition').split(' ')[1]);
+			}
+
+		}, 1000);     
+	   
+				
+		var scroll = function()
+		{				
+			scrollDif = lastScrollTop - _docu.scrollTop();
+			bgOffset = scrollDif / parallax;
+
+			if (!isNaN(bgOffset)) {
+				bgTopOffset_base += bgOffset;
+				bgTopOffset_icon += bgOffset * 2;
+				bgTopOffset_technology1 += bgOffset * 10;
+				bgTopOffset_technology2 += bgOffset * 7.5;                    
+												
+				bgTopOffset_about += bgOffset*1.75;
+				if (bgTopOffset_about>0) {
+					bgTopOffset_about = 0;
+				}
+			}
+
+			//console.log(bgTopOffset_technology1);
+				
+			if(iconbg.css('backgroundPositionY')) 
+			{
+				basebg.css('backgroundPositionY',  bgTopOffset_base + 'px');
+				iconbg.css('backgroundPositionY',  bgTopOffset_icon + 'px');
+				aboutbg.css('backgroundPositionY',  bgTopOffset_about + 'px');
+				technology1bg.css('backgroundPositionY',  bgTopOffset_technology1 + 'px');
+				technology2bg.css('backgroundPositionY',  bgTopOffset_technology2 + 'px');
+			}
+			else
+			{
+				basebg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_base) + 'px');
+				iconbg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_icon) + 'px');
+				aboutbg.css('backgroundPosition', 'center ' + parseInt(bgTopOffset_about) + 'px');
+				technology1bg.css('backgroundPosition',  'center ' + parseInt(bgTopOffset_technology1) + 'px');
+				technology2bg.css('backgroundPosition',  'center ' + parseInt(bgTopOffset_technology2) + 'px');
+			}
+
+			lastScrollTop = _docu.scrollTop();
+		};
+		
+		$(window).scroll(function()
+		{			
+			scroll();			
+		});                    
+	};
+	
 	var checkCaptcha = function() {
 
 		var captchaResponse = $("#g-recaptcha-response");
