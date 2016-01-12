@@ -188,10 +188,7 @@
 		checkWindowSize();
 		
 		$(window).on('resize', function(){
-			if ($( window ).width() > 880) 
-			{
-				new class_ParallaxScroll();	
-			}
+			checkWindowSize();
 		});
 		// init kinetic scroll
 		var pageScroll = new class_KineticScroll();
