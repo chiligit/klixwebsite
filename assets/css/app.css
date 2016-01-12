@@ -305,6 +305,10 @@ Google MAP & Info Box
 }
 
 @media(max-width:900px) {
+	
+	#technology {
+	  text-align: center;  
+	}
 	 #technology1_bg {
 		 display:none !important;
 	 }
