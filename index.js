@@ -3,6 +3,7 @@ var path = require('path');
 var load = require('express-load');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
+var ncp = require('ncp').ncp;
 
 var config = require('./config/config.json');
 global.config = config;
@@ -20,6 +21,13 @@ app.use('/js',express.static(path.join(__dirname, 'assets/js')));
 app.use('/lib',express.static(path.join(__dirname, 'assets/lib')));
 
 load('services').then('models').then('controllers').then('routes').into(app);
+
+ncp('assets', 'assets-shared', function (err) {
+ if (err) {
+   return console.error(err);
+ }
+ console.log('Assets shared!');
+});
 
 app.listen(3000);
 console.log('Listening on port 3000');
