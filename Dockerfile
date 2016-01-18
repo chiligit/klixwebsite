@@ -4,14 +4,14 @@ RUN apt-get update && \
   npm install -g pm2 && \
   mkdir -p /opt/app/KlixNetwork && npm install npm -g
 
+RUN mkdir -p /opt/test
+
 RUN npm install -g n; n 0.12.0
 RUN npm install -g npm@2.5.1
 
 WORKDIR /opt/app/KlixNetwork
 
 RUN git clone https://github.com/chiligit/klixwebsite.git
-
-RUN mkdir -p /opt/app/KlixNetwork/klixwebsite/shared
 
 WORKDIR /opt/app/KlixNetwork/klixwebsite
 
