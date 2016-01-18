@@ -22,7 +22,7 @@ app.use('/lib',express.static(path.join(__dirname, 'assets/lib')));
 
 load('services').then('models').then('controllers').then('routes').into(app);
 
-ncp('assets', 'assets-shared', function (err) {
+ncp('assets', 'shared', function (err) {
  if (err) {
    return console.error(err);
  }

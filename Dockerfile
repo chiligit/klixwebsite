@@ -11,14 +11,14 @@ WORKDIR /opt/app/KlixNetwork
 
 RUN git clone https://github.com/chiligit/klixwebsite.git
 
-WORKDIR /opt/app/KlixNetwork/klixwebsite
+RUN mkdir -p /opt/app/KlixNetwork/klixwebsite/shared
 
-RUN mkdir -p /opt/app/KlixNetwork/klixwebsite/assets-shared
+WORKDIR /opt/app/KlixNetwork/klixwebsite
 
 RUN npm install;
 
 EXPOSE 3000
 VOLUME ["/opt/app/KlixNetwork"]
-VOLUME ["/opt/app/KlixNetwork/klixwebsite/assets-shared"]
+VOLUME ["/opt/app/KlixNetwork/klixwebsite/shared"]
 
 CMD node index.js 
