@@ -18,6 +18,6 @@ WORKDIR /opt/app/KlixNetwork/klixwebsite
 RUN npm install;
 
 EXPOSE 3000
-VOLUME ["/opt/app/KlixNetwork/klixwebsite/shared"]
+VOLUME /opt/app/KlixNetwork/klixwebsite/shared
 
 CMD node index.js 
