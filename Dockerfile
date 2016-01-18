@@ -13,7 +13,7 @@ RUN git clone https://github.com/chiligit/klixwebsite.git
 
 WORKDIR /opt/app/KlixNetwork/klixwebsite
 
-mkdir /opt/app/KlixNetwork/klixwebsite/assets-shared
+RUN mkdir -p /opt/app/KlixNetwork/klixwebsite/assets-shared
 
 RUN npm install;
 
