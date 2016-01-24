@@ -209,11 +209,17 @@
         });  
 
 		var cookie = getCookie('lang');
-		if ((cookie == '') || (cookie == 'hu')){
-			$('#en').show();
-		}else {
+		var language = window.navigator.userLanguage || window.navigator.language;
+	
+		if (language == 'en' && cookie == '') {
 			$('#hu').show();
-		}
+		}else
+			if ((cookie == '') || (cookie == 'hu')){
+				$('#en').show();
+			}else {
+				$('#hu').show();
+			}
+
 		
 	
 		
