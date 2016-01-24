@@ -48,7 +48,7 @@
           map:{
             options:{
               zoom: zoom,
-              disableDefaultUI: controls,
+              disableDefaultUI: false,
               scrollwheel: scrollwheel,
               styles: styles
             }
