@@ -29,7 +29,7 @@
 	"section.support.reliability": "Megbízhatóság",
 	"section.support.reliability.description": "Alapfokú DDoS védelem, back-up turbo dízel áramgenerátor, redundáns áram- és klímarendszer, füstérzékelők, 24 órás portaszolgálat, biztonsági kamerákkal megfigyelt terület (CCTV), IP konzol",	
 	"section.support.availability": "Rendelkezésre állás",
-	"section.support.availability.description": "Kiemelkedően magas, éves szinten 99,99%",	
+	"section.support.availability.description": "Kiemelkedően magas, éves szinten 99,9%",	
 	"section.packages": "Díjcsomagok",
 	"section.contact-us": "Kapcsolat",
 	"section.contact-us.phone": "Telefon",
