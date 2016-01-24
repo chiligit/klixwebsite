@@ -3,6 +3,31 @@
 
 <% include 'head.ect' %>
 
+<noscript>
+    <style type="text/css">
+        .eupopup {display:none;}
+		header .container { padding-top:30px}
+		.nsdiv {position: fixed; top: 0px; left: 0px; z-index: 3000; 
+                height: 100%; width: 100%; background-color: #FFFFFF"}
+    </style>
+
+    <div class="nsdiv">
+		<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">                
+					<div class="intro-text">	
+						<span class="name">KLIX Network </span>
+						<hr class="star-light">                                    
+					<p><%- @__("noscript")%></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+    </div>
+</noscript>
 
 <body id="page-top" class="index">
 	<div class="eupopup eupopup-bottomleft">
