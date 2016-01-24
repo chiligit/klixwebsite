@@ -108,6 +108,7 @@
 	"form.error.email": "Please enter your email address.",
 	"form.error.email.notvalid": "Not a valid email address.",
 	"form.error.phonenumber": "Please enter your phone number.",
+	"form.error.phonenumber.notvalid": "Not a valid phone number.",	
 	"form.error.message": "Please enter a message.",
 	"form.error.captcha": "Please complete the captcha.",
 	"form.response.success": "Your message has been sent.", 

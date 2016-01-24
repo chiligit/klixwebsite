@@ -20,7 +20,7 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label><%- @__("form.label.phonenumber")%></label>
-                            <input type="tel" class="form-control" placeholder="<%- @__("form.label.phonenumber")%>" id="phone" required data-validation-required-message="<%- @__("form.error.phonenumber")%>">
+                            <input type="text" data-validation-regex-regex="^([0-9+])([0-9]{1})([0-9-/\s])*$"  class="form-control" placeholder="<%- @__("form.label.phonenumber")%>" id="phone" required data-validation-required-message="<%- @__("form.error.phonenumber")%>" data-validation-regex-message="<%- @__("form.error.phonenumber.notvalid")%>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>

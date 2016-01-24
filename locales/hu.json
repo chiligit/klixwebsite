@@ -107,6 +107,7 @@
 	"form.error.email": "Kérjük, adja meg az email címét.",
 	"form.error.email.notvalid": "A megadott email cím nem megfelelő.",
 	"form.error.phonenumber": "Kérjük, adja meg a telefonszámát.",
+	"form.error.phonenumber.notvalid": "A megadott telefonszám nem megfelelő!",	
 	"form.error.message": "Kérjük, töltse ki a szöveg mezőt.",
 	"form.error.captcha": "Kérjük, töltse ki a captcha ellenőrzést.",
 	"form.response.success": "Az üzenetét megkaptuk!", 
