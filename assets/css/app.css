@@ -577,18 +577,24 @@ Google MAP & Info Box
   #plans hr.star-primary {
     margin: 75px auto 75px;
   }
+
+  .plan.custom h3 {
+	background-color: #295f77;
+	color: #e2e2e2;
+	padding: 21px !important;
+  }
 }
 
 .plan h3 {
 	font-size: 20px;
 	padding: 10px;
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .plan.custom h3 {
 	background-color: #295f77;
 	color: #e2e2e2;
-	padding: 21px;
+	padding:11px;
 }
 
 .list-table {
