@@ -41,6 +41,8 @@
 }
 
 .bx-wrapper .bx-controls-direction a {
+  position:absolute;
+  top: 130px;
   width: 64px;
   height: 64px;
   background-size:100%;
@@ -698,7 +700,13 @@ Google MAP & Info Box
   border-bottom: 3px solid #ccc;
 }
 
-
+.uppercase {
+    text-transform: uppercase;
+	font-weight: bold;
+}
+.footer-padding{
+	padding-top:15px;
+}
 
 /* FF bug */
 .wow {
