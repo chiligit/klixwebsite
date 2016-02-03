@@ -311,8 +311,13 @@ Google MAP & Info Box
 	
 	#technology {
 		text-align: center;
-		height: 550px !important;
+		height: 700px !important;
 	}
+}
+
+.techside {
+	padding-left:20px;
+	padding-right:20px;
 }
 
 @media(max-width:900px) {
@@ -329,10 +334,9 @@ Google MAP & Info Box
 	 }
 
 	  #technology img {  
-		margin: 25px 0;
-		max-height: 700px;
+		margin: 8px 0;
+		max-height: 100px !important;
 		display:block;
-		min-height: 340px;
 	 }
  
 	 .bx-wrapper .bx-controls-direction a {
@@ -389,15 +393,6 @@ Google MAP & Info Box
 		text-align: center;
 		background: #fff;
 	}
- 
-}
-
-
-@media(min-width:901px) {
-
-  #technology img {  
-	display:none;
- }
  
 }
 
@@ -509,11 +504,11 @@ Google MAP & Info Box
 
 #technology {
   text-align: center;  
-  height:880px;
+  height:800px;
 }
 
 #technology img {  
-  margin: 25px 0;
+  margin: 8px 0;
   max-height: 690px;
 }
 
