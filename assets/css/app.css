@@ -625,8 +625,30 @@ Google MAP & Info Box
    background-color: rgba(255, 255, 255, 0.33);
 }
 
+#support .supportrow {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: middle;
+}
+
 #support .image {
-	margin-top: 75px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#support .availability {
+	margin-top: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#support .reliability {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#support .assistance {
+	margin-top: 33px;
 	text-align: center;
 }
 
