@@ -320,6 +320,12 @@ Google MAP & Info Box
 	padding-right:20px;
 }
 
+
+.techimage {
+	text-align:center;
+}
+
+
 @media(max-width:900px) {
 	
 	#technology {
