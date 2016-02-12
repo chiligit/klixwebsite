@@ -20,6 +20,7 @@ app.use('/fonts',express.static(path.join(__dirname, 'assets/fonts')));
 app.use('/img',express.static(path.join(__dirname, 'assets/img')));
 app.use('/js',express.static(path.join(__dirname, 'assets/js')));
 app.use('/lib',express.static(path.join(__dirname, 'assets/lib')));
+
 app.use(favicon(__dirname + '/assets/img/favicon.ico'));
 
 load('services').then('models').then('controllers').then('routes').into(app);
