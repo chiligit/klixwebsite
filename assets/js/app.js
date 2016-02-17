@@ -262,8 +262,8 @@
 		setTimeout(function() {
 			about_offset = aboutbg[0].getBoundingClientRect().top;
 			technology_offset = $('#technology')[0].getBoundingClientRect().top;
-			console.log(technology_offset);
 			/*
+			console.log(technology_offset);
 			console.log(_docu.scrollTop());
 			console.log(about_offset);
 			console.log(technology_offset);
