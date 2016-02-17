@@ -198,7 +198,7 @@
 		  auto: true,
 		  autoControls: true,
 		  speed: 1500,
-		  pause: 7000
+		  pause: 9000
 		});
 
         new Konami(function() {             
