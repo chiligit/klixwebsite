@@ -1,10 +1,6 @@
-
 /*
- 
  BX Slider Customization
- 
  */
-
 .bx-wrapper {
 	background: none;
 	border: none;
@@ -12,7 +8,6 @@
 	padding: 30px 0px 0px 0px !important;
 	margin 0px !important
 }
-
 
 .bx-wrapper {
     position: relative;
@@ -72,8 +67,6 @@
   opacity: 1;  
 }
 
-
-
 .bx-wrapper .bx-next {  
   background: url('/img/icons/right-arrow-icon.png') no-repeat;
 }
@@ -97,8 +90,6 @@
 .bx-wrapper .bx-next:hover::before {
   opacity: 1;  
 }
-
-
 
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus,
@@ -187,7 +178,6 @@ Google MAP & Info Box
 	}
   
 }
-
 
 @media screen and (max-width: 500px) {
 
@@ -402,7 +392,6 @@ Google MAP & Info Box
  
 }
 
-
 .map-info-box.dark-skin address,
 .map-info-box.dark-skin .map-info-box-logo {
   color: #fff;
@@ -410,7 +399,6 @@ Google MAP & Info Box
 
 /*
 	Custom CSS
-
 */
 
 .navbar-logo {
@@ -421,7 +409,6 @@ Google MAP & Info Box
 .navbar-logo img {
   height: 50px;  
 }
-
 
 .navbar-lang {
     position: absolute;
@@ -695,7 +682,6 @@ Google MAP & Info Box
 .language-logo {
 	padding-left:25px;
 }
-
 
 @media(max-width:767px) {
 	#polygon_bg {
