@@ -57,80 +57,6 @@
         });
     }  
     
-    $('#server-hosting-chart').highcharts({
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: 'OS elterjedtség'
-        },
-        xAxis: {        	 
-            categories: ['2010','2012','2014']
-        },
-        yAxis: {
-            title: {
-                text: 'publikus szerverek (%)'
-            }
-        },
-        series: [{
-            name: 'Linux',
-            data: [33, 34, 35]
-        }, {
-            name: 'Windows',
-            data: [30, 31, 30]
-        }]
-    });	
-
-    $('#browser-shares-chart').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: 'Böngészők (%), 2015'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: false,                    
-                },
-                showInLegend: true
-            }
-        },
-        series: [{
-            name: "Brands",
-            colorByPoint: true,
-            data: [{
-                name: "IE",
-                y: 56.33
-            }, {
-                name: "Chrome",
-                y: 24.03,
-                sliced: true,
-                selected: true
-            }, {
-                name: "Firefox",
-                y: 10.38
-            }, {
-                name: "Safari",
-                y: 4.77
-            }, {
-                name: "Opera",
-                y: 0.91
-            }, {
-                name: "egyéb",
-                y: 0.2
-            }]
-        }]
-    });
-
     var class_KineticScroll = function()
 		{
 
@@ -218,11 +144,7 @@
 				$('#en').show();
 			}else {
 				$('#hu').show();
-			}
-
-		
-	
-		
+			}	
 });
 
 	var checkWindowSize = function() {
