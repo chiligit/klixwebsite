@@ -137,7 +137,7 @@
 		var cookie = getCookie('lang');
 		var language = window.navigator.userLanguage || window.navigator.language;
 	
-		if (language == 'en' && cookie == '') {
+		if ((language == 'en' || language == 'en-US')  && cookie == '') {
 			$('#hu').show();
 		}else
 			if ((cookie == '') || (cookie == 'hu')){
