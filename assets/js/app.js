@@ -283,7 +283,8 @@
 
 	var changeLang = function(lang) {
 		document.cookie = 'lang='+lang;
-		location.reload(true);
+		window.location = window.location;
+		window.location.reload(true);
 	};		
 	
 	function getCookie(cname) {
