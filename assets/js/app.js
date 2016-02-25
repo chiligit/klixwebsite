@@ -127,6 +127,7 @@
 		  pause: 9000
 		});
 
+		
         new Konami(function() {             
             $("section").each(function() {
                 $(this).addClass("wow tada");                
@@ -134,6 +135,9 @@
             new WOW().init();
         });  
 
+		$('#hu').hide();
+		$('#en').hide();
+		
 		var cookie = getCookie('lang');
 		var language = window.navigator.userLanguage || window.navigator.language;
 	
