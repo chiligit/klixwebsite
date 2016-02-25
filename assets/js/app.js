@@ -135,6 +135,9 @@
             new WOW().init();
         });  
 
+		
+		$('#captchaAlert').hide();
+		
 		$('#hu').hide();
 		$('#en').hide();
 		
