@@ -135,6 +135,21 @@
             new WOW().init();
         });  
 
+		var string1 = "info";
+		var string2 = "support"
+		var string3 = "@";
+		var string4 = "klixnetwork";
+		var string5 = "hu";
+		var string6 = string1 + string3 + string4 + "." + string5;
+		var string7 = string2 + string3 + string4 + "." + string5;
+		var string8 = "mail";
+		var string9 = "to";
+		var string10 = string8 + string9 +":";
+
+		$('#a-info').prop("href", string10 + string6);
+		$('#a-info').text(string6);
+		$('#a-support').prop("href", string10 + string7);
+		$('#a-support').text(string7);
 		
 		$('#captchaAlert').hide();
 		
