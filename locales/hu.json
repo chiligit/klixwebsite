@@ -43,7 +43,7 @@
 	"package.first.name": "Klix Starter",
 	"package.first.price": "25 000 Ft -tól",
 	"package.first.processor": "CPU: AMD Opteron",
-	"package.first.memory": "RAM: 8 - 16 GB",
+	"package.first.memory": "RAM: 8 - 12 GB",
 	"package.first.disk": "max. 4 x HDD/SSD SAS 2.0",
 	"package.first.disktype": "PCIexpress SSD",
 	"package.first.storagetech": "hw RAID",
