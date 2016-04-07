@@ -30,6 +30,7 @@ function getDateTime() {
     day = (day < 10 ? "0" : "") + day;
     
     return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
-                                                                                                       }
+     
+                                                                                                  }
 server.listen(88);
 console.log(getDateTime() + " Server is listening");
