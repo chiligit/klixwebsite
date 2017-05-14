@@ -120,11 +120,17 @@
 		var pageScroll = new class_KineticScroll();
 		//slider
 
-		$('.bxslider').bxSlider({
+		var slider = $('.bxslider').bxSlider({
 		  auto: true,
 		  autoControls: true,
 		  speed: 1500,
-		  pause: 9000
+		  pause: 9000,
+		  onSlideBefore: function() {
+				slider.stopAuto();
+		  },
+		  onSlideAfter: function() {
+				slider.startAuto();
+		  }
 		});
 
 		
