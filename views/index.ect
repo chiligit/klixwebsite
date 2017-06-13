@@ -65,19 +65,19 @@
                     <a href="#about"><%- @__("section.about-us")%></a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#plans"><%- @__("section.packages")%></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact"><%- @__("section.contact-us")%></a>
+                </li>
+                <li class="page-scroll">
                     <a href="#portfolio"><%- @__("section.services")%></a>
                 </li>
                 <li class="page-scroll">
                     <a href="#technology"><%- @__("section.technologies")%></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#plans"><%- @__("section.packages")%></a>
-                </li>
-                <li class="page-scroll">
                     <a href="#support"><%- @__("section.support")%></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact"><%- @__("section.contact-us")%></a>
                 </li>
 				<li>
 					<div class="language-logo">
@@ -99,10 +99,6 @@
             <div class="col-md-12">                
                 <div class="intro-text">	
                     <h1 class="name">KLIX Network </h1>
-                    <div class="quote wow fadeIn" data-wow-duration="5s">
-                        <em>"<%- @__("quotation")%>"</em>
-                        <span>Sir Isaac Newton</span>
-                    </div>
                     <hr class="star-light">                                    
                 </div>
             </div>
@@ -129,6 +125,157 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Plans Grid Section -->
+<section id="plans">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2><%- @__("section.packages")%></h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="plan wow bounceInDown" data-wow-delay="0.1s" data-wow-offset="100">
+                    <h3><%- @__("package.first.name")%></h3>  
+                    <ul class="list-table">
+						<li><%- @__("package.first.price")%></li>					
+						<li><%- @__("package.first.processor")%></li>
+						<li><%- @__("package.first.memory")%></li>
+                        <li><%- @__("package.first.disk")%></li>
+						<li><%- @__("package.first.disktype")%></li>
+                        <li>
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.first.id")%>';">                                
+                                <%- @__("package.details")%>
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+                            </button>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="plan wow bounceInDown" data-wow-delay="0.3s" data-wow-offset="100">
+                    <h3><%- @__("package.second.name")%></h3>  
+                    <ul class="list-table">
+						<li><%- @__("package.second.price")%></li>						
+						<li><%- @__("package.second.processor")%></li>
+						<li><%- @__("package.second.memory")%></li>
+                        <li><%- @__("package.second.disk")%></li>
+                        <li><%- @__("package.second.disktype")%></li>
+                        <li>
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.second.id")%>';">                                
+                                <%- @__("package.details")%>
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+                            </button>
+                        </li>                  
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="plan wow bounceInDown" data-wow-delay="0.5s" data-wow-offset="100">
+                    <h3><%- @__("package.third.name")%></h3>  
+                    <ul class="list-table">
+						<li><%- @__("package.third.price")%></li>						
+						<li><%- @__("package.third.processor")%></li>
+						<li><%- @__("package.third.memory")%></li>
+                        <li><%- @__("package.third.disk")%></li>
+                        <li><%- @__("package.third.disktype")%></li>
+                        <li>
+                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.third.id")%>';">                                
+                                <%- @__("package.details")%>
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+                            </button>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="plan custom wow bounceInDown" data-wow-delay="0.7s" data-wow-offset="100">
+                    <h3><%- @__("package.fourth.name")%></h3>  
+                    <ul class="list-table">
+						<li><%- @__("package.fourth.description1")%></li>
+						<li><%- @__("package.fourth.description2")%></li>						
+                        <li>
+                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan?package=<%- @__("package.fourth.id")%>';">                                
+                                <%- @__("package.details")%>
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2><%- @__("section.contact-us")%></h2>
+                <hr class="star-primary thick">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">              
+                <h3><%- @__("form.contact-us")%></h3>
+                <br/>
+				<% include 'form.ect' %>
+				<hr class="star-primary thick">				
+                <br/>
+			</div>
+        </div>
+    </div>    
+    <!-- Wrap your map with ".google-map-container" for usage with info box. -->
+    <div class="google-map-container">
+      <div class="container">
+
+          <div class="map-info-box dark-skin">
+		    <div class="row">
+				  <div class="col-sm-6 inline map-info-box-logo">
+					  <img class="img-responsive white" src="img/logo_white.png" alt="Klik Network logo">
+				  </div>
+				  <div class="col-sm-6 map-info-box-qrcode">
+						<img class="img-responsive white" src="img/qr_code.png" alt="Klix data qrcode">
+				  </div>
+			</div>
+              <div class="inline row">
+			  <div class="divider"></div>
+				<div class="col-sm-12">
+					<address class="space-bottom">
+						<strong>KLIX Network Kft.</strong><br>
+						1132 Budapest, Victor Hugo <%- @__("section.contact-us.street")%> 11-15.<br>
+						<strong><%- @__("section.contact-us.email")%>: <a id="a-info" href=""></a></h3>
+					</address>
+				</div>
+              </div>
+          </div>
+      </div>
+      <!-- Data API:
+           data-height="500" height of the map in pixels
+           data-address="Your address" string
+           data-zoom="number" to control map zoom when loaded
+           data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
+           data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
+           data-marker="path_to_your_image" path to custom marker image
+           data-marker-title=" Your title" appears on marker hover
+           data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
+       -->
+      <div class="google-map"
+           data-height="450"
+           data-address="1132 Budapest, Victor Hugo utca 11-15, Hungary"
+           data-zoom="14"
+           data-disable-controls="true"
+           data-scrollwheel="false"
+           data-marker="img/google_map_marker.png"
+           data-marker-title="KLIX Network Office">
+      </div>    
     </div>
 </section>
 
@@ -261,89 +408,6 @@
     </div>
 </section>
 
-<!-- Plans Grid Section -->
-<section id="plans">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2><%- @__("section.packages")%></h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="plan wow bounceInDown" data-wow-delay="0.1s" data-wow-offset="100">
-                    <h3><%- @__("package.first.name")%></h3>  
-                    <ul class="list-table">
-						<li><%- @__("package.first.price")%></li>					
-						<li><%- @__("package.first.processor")%></li>
-						<li><%- @__("package.first.memory")%></li>
-                        <li><%- @__("package.first.disk")%></li>
-						<li><%- @__("package.first.disktype")%></li>
-                        <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.first.id")%>';">                                
-                                <%- @__("package.details")%>
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-                            </button>
-                        </li>
-                    </ul>                    
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="plan wow bounceInDown" data-wow-delay="0.3s" data-wow-offset="100">
-                    <h3><%- @__("package.second.name")%></h3>  
-                    <ul class="list-table">
-						<li><%- @__("package.second.price")%></li>						
-						<li><%- @__("package.second.processor")%></li>
-						<li><%- @__("package.second.memory")%></li>
-                        <li><%- @__("package.second.disk")%></li>
-                        <li><%- @__("package.second.disktype")%></li>
-                        <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.second.id")%>';">                                
-                                <%- @__("package.details")%>
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-                            </button>
-                        </li>                  
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="plan wow bounceInDown" data-wow-delay="0.5s" data-wow-offset="100">
-                    <h3><%- @__("package.third.name")%></h3>  
-                    <ul class="list-table">
-						<li><%- @__("package.third.price")%></li>						
-						<li><%- @__("package.third.processor")%></li>
-						<li><%- @__("package.third.memory")%></li>
-                        <li><%- @__("package.third.disk")%></li>
-                        <li><%- @__("package.third.disktype")%></li>
-                        <li>
-                            <button type="button" class="btn btn-info btn-lg" onclick="window.location='/plan?package=<%- @__("package.third.id")%>';">                                
-                                <%- @__("package.details")%>
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-                            </button>
-                        </li>                        
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="plan custom wow bounceInDown" data-wow-delay="0.7s" data-wow-offset="100">
-                    <h3><%- @__("package.fourth.name")%></h3>  
-                    <ul class="list-table">
-						<li><%- @__("package.fourth.description1")%></li>
-						<li><%- @__("package.fourth.description2")%></li>						
-                        <li>
-                            <button type="button" class="btn btn-danger btn-lg" onclick="window.location='/plan?package=<%- @__("package.fourth.id")%>';">                                
-                                <%- @__("package.details")%>
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="success" id="support">
     <div class="container">
         <div class="row">
@@ -380,73 +444,6 @@
                 <img src="img/portfolio/customer-support.png" alt="assistance"/>
             </div>
         </div>        
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2><%- @__("section.contact-us")%></h2>
-                <hr class="star-primary thick">
-            </div>
-        </div>
-    </div>    
-    <!-- Wrap your map with ".google-map-container" for usage with info box. -->
-    <div class="google-map-container">
-      <div class="container">
-
-          <div class="map-info-box dark-skin">
-		    <div class="row">
-				  <div class="col-sm-6 inline map-info-box-logo">
-					  <img class="img-responsive white" src="img/logo_white.png" alt="Klik Network logo">
-				  </div>
-				  <div class="col-sm-6 map-info-box-qrcode">
-						<img class="img-responsive white" src="img/qr_code.png" alt="Klix data qrcode">
-				  </div>
-			</div>
-              <div class="inline row">
-			  <div class="divider"></div>
-				<div class="col-sm-12">
-					<address class="space-bottom">
-						<strong>KLIX Network Kft.</strong><br>
-						1132 Budapest, Victor Hugo <%- @__("section.contact-us.street")%> 11-15.<br>
-						<strong><%- @__("section.contact-us.email")%>: <a id="a-info" href=""></a></h3>
-					</address>
-				</div>
-              </div>
-          </div>
-      </div>
-      <!-- Data API:
-           data-height="500" height of the map in pixels
-           data-address="Your address" string
-           data-zoom="number" to control map zoom when loaded
-           data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
-           data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
-           data-marker="path_to_your_image" path to custom marker image
-           data-marker-title=" Your title" appears on marker hover
-           data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
-       -->
-      <div class="google-map"
-           data-height="450"
-           data-address="1132 Budapest, Victor Hugo utca 11-15, Hungary"
-           data-zoom="14"
-           data-disable-controls="true"
-           data-scrollwheel="false"
-           data-marker="img/google_map_marker.png"
-           data-marker-title="KLIX Network Office">
-      </div>    
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <hr class="star-primary thick">
-                <h3><%- @__("form.contact-us")%></h3>
-                <br/>             
-            </div>
-        </div>
-		<% include 'form.ect' %>
     </div>
 </section>
 
