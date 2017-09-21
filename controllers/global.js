@@ -55,6 +55,36 @@
 		return Q.nfcall(send);
 	};
 
+	var sendCustomerResponse = function(app,type,params) {
+		
+		var send = function(done) {
+			var mailString = i18n.__('customer.mail.response');
+			var mailSubject = i18n.__('customer.mail.subject');
+			console.log('///////////////////');
+			console.log(i18n.__('customer.mail.response'));
+			console.log('///////////////////');
+			console.log('');
+			console.log('mail:');
+			app.services.mail.sendMail({
+				to: params.email,
+				subject: mailSubject,
+				text: mailString
+			},function(error, info){
+				if(error){
+					console.log('--------------------');
+					console.log(error);
+					console.log('--------------------');
+					done(error);
+				} else {
+					console.log('Message sent: ' + info.response);
+					done(null,'sent');	
+				}
+			});		
+		}
+		return Q.nfcall(send);
+	};
+	
+	
 	var postCall = function(req,res,package) {
 		async.waterfall([
 				function(doneA) {
@@ -64,10 +94,16 @@
 						.catch(doneA);
 				},
 				function(response, doneB) {
-					saveFormData(app,package,req.body).then(function(response) {
+					sendCustomerResponse(app,package,req.body).then(function(response) {
 							doneB(null, response);
 						})
 						.catch(doneB);
+				},
+				function(response, doneC) {
+					saveFormData(app,package,req.body).then(function(response) {
+							doneC(null, response);
+						})
+						.catch(doneC);
 				}
 			], function(err) {
 				if (!err) {

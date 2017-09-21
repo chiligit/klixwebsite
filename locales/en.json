@@ -120,5 +120,7 @@
 	"footer.alsocanfindus": "You also can find us",
 	"footer.ourcompany" : "Our Company",
 	"footer.taxnumber" : "Taxnumber",
-	"footer.registrationnumber" : "Registration number"
+	"footer.registrationnumber" : "Registration number",
+	"customer.mail.response": "\n Tisztelt Érdeklődő!\n\n Köszönjük megkeresést, amellyel kapcsolatban munkatársunk hamarosan felveszi Önnel a kapcsolatot.\n\n Üdvözlettel,\n KLIX Network",
+	"customer.mail.subject": "Kapcsolatfelvétel"
 }

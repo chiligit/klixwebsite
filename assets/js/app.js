@@ -132,6 +132,21 @@
 				slider.startAuto();
 		  }
 		});
+		
+		var testimonialSlider = $('.testimonialSlider').bxSlider({
+		  controls: false,
+		  auto: true,
+		  pager: false,
+		  autoControls: false,
+		  speed: 1500,
+		  pause: 9000,
+		  onSlideBefore: function() {
+				slider.stopAuto();
+		  },
+		  onSlideAfter: function() {
+				slider.startAuto();
+		  }
+		});
 
 		
         new Konami(function() {             

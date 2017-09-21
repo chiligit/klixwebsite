@@ -119,5 +119,7 @@
 	"footer.alsocanfindus": "Itt is megtalál minket",
 	"footer.companydata" : "Cégadatok",
 	"footer.taxnumber" : "Adószám",
-	"footer.registrationnumber" : "Cégjegyzékszám"
+	"footer.registrationnumber" : "Cégjegyzékszám",
+	"customer.mail.response": "\n Tisztelt Érdeklődő!\n\n Köszönjük megkeresést, amellyel kapcsolatban munkatársunk hamarosan felveszi Önnel a kapcsolatot.\n\n Üdvözlettel,\n KLIX Network",
+	"customer.mail.subject": "Kapcsolatfelvétel"
 }
