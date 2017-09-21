@@ -99,7 +99,6 @@
             <div class="col-md-12">                
                 <div class="intro-text">	
                     <h1 class="name">KLIX Network </h1>
-                    <hr class="star-light">                                    
                 </div>
             </div>
         </div>
@@ -108,7 +107,50 @@
 
 <!-- About Section -->
 <section id="about">
-    <div class="container">
+		<div class="col-md-12 text-center aboutheader">
+				<h2>Rólunk mondták</h2>
+				<hr class="star-light">
+		</div>
+		<ul class="testimonialSlider">
+			<li>
+			<div class="container">
+				<div class="row">                          
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<div class="testimonial">
+							<div class="testimonial_blockquote">“Nem volt rossz anno a dual P2-266 "Maláj Sandokan" alapú, 400-400 MHz-re tuningolt szerverünk sem, de a KLIX Network csapatával összerakott Intel Xeon az első olyan gépünk, ami csak teszi a dolgát csendben, hibátlanul, masszív tartalékokkal.”</div>
+							<div class="testimonial_author">Prohardver</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>      
+			<li>
+			<div class="container">
+				<div class="row">                          
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<div class="testimonial">
+							<div class="testimonial_blockquote">“Együttesünknek az évek során rengetegszer kellett különböző IT szolgáltatásokat igénybe vennie, mint például a mindennapi online megjelenés vagy egy saját webshop kialakítása. Végül a KLIX csapattal megtaláltuk azokat a megoldásokat, amelyek számunkra a legjobb megoldást.”</div>
+							<div class="testimonial_author">Szeged Trombones Ensemble</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li>
+			<div class="container">
+				<div class="row">                          
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<div class="testimonial">
+							<div class="testimonial_blockquote">“Cégünk fejlesztéseihez egyik pillanatról a másikra szüksége volt FTP kiszolgálásra, amire a KLIX Network rugalmasan és gyorsan reagált. Azóta is megelégedéssel használjuk szolgáltatásukat.”</div>
+							<div class="testimonial_author">Prímapontos Kft</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>      
+		</ul>
+
+    <!--div class="container">
         <div class="row">
             <div class="col-md-6 container"></div>
             <div class="col-md-6 container right wow bounceInLeft" data-wow-duration="2s" >
@@ -125,53 +167,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div-->
 </section>
-	<div class="container">
-	    <div class="row">
-            <div class="col-md-12 text-center">
-                <h4>Rólunk mondták</h4>
-            </div>
-			<ul class="testimonialSlider">
-			  <li>
-				<div class="container">
-					<div class="row">                          
-						<div class="col-md-10 col-md-offset-1 text-center">
-							<div class="testimonial">
-								<div class="testimonial_blockquote">“Nem volt rossz anno a dual P2-266 "Maláj Sandokan" alapú, 400-400 MHz-re tuningolt szerverünk sem, de a KLIX Network csapatával összerakott Intel Xeon az első olyan gépünk, ami csak teszi a dolgát csendben, hibátlanul, masszív tartalékokkal.”</div>
-								<div class="testimonial_author">Prohardver</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			  </li>      
-			  <li>
-				<div class="container">
-					<div class="row">                          
-						<div class="col-md-10 col-md-offset-1 text-center">
-							<div class="testimonial">
-								<div class="testimonial_blockquote">“Együttesünknek az évek során rengetegszer kellett különböző IT szolgáltatásokat igénybe vennie, mint például a mindennapi online megjelenés vagy egy saját webshop kialakítása. Végül a KLIX csapattal megtaláltuk azokat a megoldásokat, amelyek számunkra a legjobb megoldást.”</div>
-								<div class="testimonial_author">Szeged Trombones Ensemble</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			  </li>
-			  <li>
-				<div class="container">
-					<div class="row">                          
-						<div class="col-md-10 col-md-offset-1 text-center">
-							<div class="testimonial">
-								<div class="testimonial_blockquote">“Cégünk fejlesztéseihez egyik pillanatról a másikra szüksége volt FTP kiszolgálásra, amire a KLIX Network rugalmasan és gyorsan reagált. Azóta is megelégedéssel használjuk szolgáltatásukat.”</div>
-								<div class="testimonial_author">Prímapontos Kft</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			  </li>      
-			</ul>
-        </div>
-	</div>
 	
 <!-- Plans Grid Section -->
 <section id="plans">
@@ -266,18 +263,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">              
-                <h3><%- @__("form.contact-us")%></h3>
-                <br/>
-				<% include 'form.ect' %>
-				<hr class="star-primary thick">				
-                <br/>
-			</div>
-        </div>
-    </div>    
-    <!-- Wrap your map with ".google-map-container" for usage with info box. -->
+		    <!-- Wrap your map with ".google-map-container" for usage with info box. -->
     <div class="google-map-container">
       <div class="container">
 
@@ -322,6 +308,18 @@
            data-marker-title="KLIX Network Office">
       </div>    
     </div>
+		<br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">              
+                <h3><%- @__("form.contact-us")%></h3>
+                <br/>
+				<% include 'form.ect' %>
+				<!--hr class="star-primary thick"-->				
+ 		</div>
+        </div>
+    </div>    
+
 </section>
 
 <!-- Portfolio Grid Section -->

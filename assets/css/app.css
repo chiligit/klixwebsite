@@ -315,6 +315,10 @@ Google MAP & Info Box
 	text-align:center;
 }
 
+.intro-text {
+	margin: 60px 0px 60px 0px;
+}
+
 
 @media(max-width:900px) {
 	
@@ -392,7 +396,7 @@ Google MAP & Info Box
  
 }
 
-.map-info-box.dark-skin address,
+.-info-box.dark-skin address,
 .map-info-box.dark-skin .map-info-box-logo {
   color: #fff;
 }
@@ -566,7 +570,7 @@ Google MAP & Info Box
 
 @media(min-width:1200px) {
   #plans hr.star-primary {
-    margin: 75px auto 75px;
+    margin: 45px auto 45px;
   }
 
   .plan.custom h3 {
@@ -725,12 +729,18 @@ Google MAP & Info Box
 
 /* Testimonial */
 
+.aboutheader {
+	color: white;
+	padding-bottom: 50px;
+}
+	
 .testimonial {
 	padding: 15px;
 	margin: 10px;
 	background: #dadada none repeat scroll 0 0;
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px #888888;
+	opacity: 0.9;
 }
 
 .testimonial .testimonial_author {
