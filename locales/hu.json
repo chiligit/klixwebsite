@@ -2,6 +2,7 @@
 	"site.title": "Klix Network - server hosting, VPS, domain",
 	"language-postfix": "hu",
 	"noscript": "Sajnos a honlapunk a JavaScript engedélyezése nélkül nem működik megfelelően. Kérjük engedélyezze a böngészőjében a JavaScript működését!",
+	"section.about": "Rólunk mondták",
 	"section.about-us": "Rólunk",
 	"section.about-us.text": "Célunk, hogy ügyfeleinknek rugalmas és biztonságos virtuális és dedikált szerver szolgáltatást nyújtsunk magas rendelkezésre állás mellett.<br>Ezért cégünk mindig is az aktuális iparági sztenderdeket követi és alkalmazza.",
 	"section.services": "Szolgáltatások",
@@ -120,6 +121,14 @@
 	"footer.companydata" : "Cégadatok",
 	"footer.taxnumber" : "Adószám",
 	"footer.registrationnumber" : "Cégjegyzékszám",
-	"customer.mail.response": "\n Tisztelt Érdeklődő!\n\n Köszönjük megkeresést, amellyel kapcsolatban munkatársunk hamarosan felveszi Önnel a kapcsolatot.\n\n Üdvözlettel,\n KLIX Network",
-	"customer.mail.subject": "Kapcsolatfelvétel"
+	"customer.mail.response": "\n Kedves Érdeklődő!\n\n Köszönjük üzenetét, amely alapján kollégáink hamarosan felveszik önnel a kapcsolatot.\n\n Üdvözlettel,\n KLIX Network csapata",
+	"customer.mail.subject": "Kapcsolatfelvétel",
+	"testimonial.first.blockquote" : "“Nem volt rossz anno a dual P2-266 "Maláj Sandokan" alapú, 400-400 MHz-re tuningolt szerverünk sem, de a KLIX Network csapatával összerakott Intel Xeon az első olyan gépünk, ami csak teszi a dolgát csendben, hibátlanul, masszív tartalékokkal.”",
+	"testimonial.first.author" : "Prohardver",
+	"testimonial.second.blockquote" : "“Együttesünknek az évek során rengetegszer kellett különböző IT szolgáltatásokat igénybe vennie, mint például a mindennapi online megjelenés vagy egy saját webshop kialakítása. Végül a KLIX csapattal megtaláltuk azokat a megoldásokat, amelyek számunkra a legjobbnak bizonyultak.”",
+	"testimonial.second.author" : "Szeged Trombones Ensemble",
+	"testimonial.third.blockquote" : "“Cégünk fejlesztéseihez egyik pillanatról a másikra szüksége volt FTP kiszolgálásra, amire a KLIX Network rugalmasan és gyorsan reagált. Azóta is megelégedéssel használjuk szolgáltatásukat.”",
+	"testimonial.third.author" : "Prímapontos Kft",
+	"testimonial.fourth.blockquote" : "fourth_quote",
+	"testimonial.fourth.author" : "fourth_author"
 }

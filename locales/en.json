@@ -2,6 +2,7 @@
 	"site.title": "Klix Network - server hosting, VPS, domain",
 	"language-postfix": "en",
 	"noscript": "Sorry, our web page is not working properly without JavaScript. Please enable it in your browser!",
+	"section.about": "About us",
 	"section.about-us": "About us",
 	"section.about-us.text": "Our purpose is to provide flexible and safe virtual and dedicated server service with high availability.<br> Therefore we always follow and use the latest technological standards.",
 	"section.services": "Services",
@@ -121,6 +122,14 @@
 	"footer.ourcompany" : "Our Company",
 	"footer.taxnumber" : "Taxnumber",
 	"footer.registrationnumber" : "Registration number",
-	"customer.mail.response": "\n Tisztelt Érdeklődő!\n\n Köszönjük megkeresést, amellyel kapcsolatban munkatársunk hamarosan felveszi Önnel a kapcsolatot.\n\n Üdvözlettel,\n KLIX Network",
-	"customer.mail.subject": "Kapcsolatfelvétel"
+	"customer.mail.response": "\n Dear Inquirer,\n\n Thank you for your message. \n Our colleagues will contact you soon. \n\n Sincerely,\n KLIX Network team",
+	"customer.mail.subject": "Contact",
+	"testimonial.first.blockquote" : "“In the past our so-called “Malaysian Sandokan” P2-266 server that was overclocked to 400-400 MHz served pretty well but the new Intel Xeon server that was built together with the team of KLIX Network is our first kind of a server that just does what it has to do, quietly, flawlessly with massive reserves.”",
+	"testimonial.first.author" : "Prohardver",
+	"testimonial.second.blockquote" : "“Throughout the years our ensemble had to use different IT related services like the everyday online presence or creating our webshop service. Finally with the help of KLIX we have always found the best tailor made solutions for Szeged Trombones Ensemble.”",
+	"testimonial.second.author" : "Szeged Trombones Ensemble",
+	"testimonial.third.blockquote" : "“Our company needed FTP service from one moment to the next and KLIX Network responded to our urgent request swiftly and as flexible as needed. Ever since we use their service with satisfaction.”",
+	"testimonial.third.author" : "Prímapontos Kft",
+	"testimonial.fourth.blockquote" : "fourth_quote",
+	"testimonial.fourth.author" : "ChiliSoft Kft"
 }
