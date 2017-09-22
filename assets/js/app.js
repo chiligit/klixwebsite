@@ -124,7 +124,7 @@
 		  auto: true,
 		  autoControls: true,
 		  speed: 1500,
-		  pause: 9000,
+		  pause: 8000,
 		  onSlideBefore: function() {
 				slider.stopAuto();
 		  },
@@ -139,12 +139,12 @@
 		  pager: false,
 		  autoControls: false,
 		  speed: 1500,
-		  pause: 9000,
+		  pause: 8000,
 		  onSlideBefore: function() {
-				slider.stopAuto();
+				testimonialSlider.stopAuto();
 		  },
 		  onSlideAfter: function() {
-				slider.startAuto();
+				testimonialSlider.startAuto();
 		  }
 		});
 
