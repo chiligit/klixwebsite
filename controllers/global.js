@@ -55,13 +55,13 @@
 		return Q.nfcall(send);
 	};
 
-	var sendCustomerResponse = function(app,type,params) {
+	var sendCustomerResponse = function(app,type,params,res) {
 		
 		var send = function(done) {
-			var mailString = i18n.__('customer.mail.response');
-			var mailSubject = i18n.__('customer.mail.subject');
+			var mailString = res.__('customer.mail.response');
+			var mailSubject = res.__('customer.mail.subject');
 			console.log('///////////////////');
-			console.log(i18n.__('customer.mail.response'));
+			console.log(res.__('customer.mail.response'));
 			console.log('///////////////////');
 			console.log('');
 			console.log('mail:');
@@ -94,7 +94,7 @@
 						.catch(doneA);
 				},
 				function(response, doneB) {
-					sendCustomerResponse(app,package,req.body).then(function(response) {
+					sendCustomerResponse(app,package,req.body,res).then(function(response) {
 							doneB(null, response);
 						})
 						.catch(doneB);
