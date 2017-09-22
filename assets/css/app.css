@@ -767,10 +767,7 @@ Google MAP & Info Box
     padding: 15px;
     position: relative;
 	display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 40px;
-    -webkit-margin-end: 40px;
+	margin: 20px 40px 20px 40px
 }
 
 .testimonial .testimonial_blockquote::before {
@@ -799,4 +796,5 @@ Google MAP & Info Box
     border-style: solid;
     border-width: 20px 20px 0 0;
     border-color: #e63f0c transparent transparent transparent;
+	background: #dadada none repeat scroll 0 0;
 }
