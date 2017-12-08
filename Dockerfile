@@ -1,4 +1,4 @@
-FROM node:0.12
+FROM node:6.10.3
 
 RUN apt-get update && \
   npm install -g pm2 && \
@@ -6,8 +6,8 @@ RUN apt-get update && \
 
 RUN mkdir -p /opt/test
 
-RUN npm install -g n; n 0.12.0
-RUN npm install -g npm@2.5.1
+RUN npm install -g --force npm@2.5.1
+RUN npm install -g n --force; n 0.12.0
 
 WORKDIR /opt/app/KlixNetwork
 
