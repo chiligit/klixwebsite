@@ -118,29 +118,59 @@
 			});	
 	};
 
+	var logBadRequest = function(req, type, package) {
+        console.log('--------------------');
+        console.log('Bad request from IP:' + req.connection.remoteAddress);
+        console.log('type: ' + type);
+        if (type == 'plan') {
+            console.log('package: ' + package);
+		}
+        console.log('required param values:');
+        console.log('name: ' + req.query.name);
+        console.log('phone: ' + req.query.phone);
+        console.log('email: ' + req.query.email);
+        console.log('message: ' + req.query.message);
+        console.log('--------------------');
+	}
 	
     var globalController = {
         index: function(req, res){
 			if (req.method == 'POST') {
-					postCall(req,res,'contact_us');
+				if (req.query.name != undefined  &&
+                    req.query.phone != undefined  &&
+                    req.query.email != undefined &&
+                    req.query.message != undefined )
+				{
+                    postCall(req, res, 'contact_us');
+                } else {
+    				logBadRequest(req, 'contact_us', null);
+    				res.render('index');
+                }
 			} else {
 				res.render('index');
 			}
         },
 
         plan: function(req, res){
-			if ((req.query.package != undefined) && ("package."+req.query.package+".id" != res.__("package."+req.query.package+".id"))) {
-		
-				if (req.method == 'POST') {
-						postCall(req, res, 'package:'+req.query.package);
-				} else {
-						var data = { package : req.query.package };
-						res.render('plan', data);	
-				}
-			}
-			else{
-					res.redirect('/');
-			}
+
+            if (req.method == 'POST') {
+
+                if ((req.query.package != undefined) &&
+                    ("package." + req.query.package + ".id" != res.__("package." + req.query.package + ".id")) &&
+                    req.query.name != undefined &&
+                    req.query.phone != undefined &&
+                    req.query.email != undefined &&
+                    req.query.message != undefined)
+				{
+                    postCall(req, res, 'package:'+req.query.package);
+                } else {
+                    logBadRequest(req, 'plan', req.query.package);
+                    res.render('index');
+                }
+            } else {
+                var data = { package : req.query.package };
+                res.render('plan', data);
+            }
         }
 
     };
