@@ -126,20 +126,22 @@
             console.log('package: ' + package);
 		}
         console.log('required param values:');
-        console.log('name: ' + req.query.name);
-        console.log('phone: ' + req.query.phone);
-        console.log('email: ' + req.query.email);
-        console.log('message: ' + req.query.message);
+        console.log('name: ' + req.body.name);
+        console.log('phone: ' + req.body.phone);
+        console.log('email: ' + req.body.email);
+        console.log('message: ' + req.body.message);
         console.log('--------------------');
 	}
 	
     var globalController = {
         index: function(req, res){
+
 			if (req.method == 'POST') {
-				if (req.query.name != undefined  &&
-                    req.query.phone != undefined  &&
-                    req.query.email != undefined &&
-                    req.query.message != undefined )
+
+				if (req.body.name != undefined  &&
+                    req.body.phone != undefined  &&
+                    req.body.email != undefined &&
+                    req.body.message != undefined )
 				{
                     postCall(req, res, 'contact_us');
                 } else {
@@ -157,10 +159,10 @@
 
                 if ((req.query.package != undefined) &&
                     ("package." + req.query.package + ".id" != res.__("package." + req.query.package + ".id")) &&
-                    req.query.name != undefined &&
-                    req.query.phone != undefined &&
-                    req.query.email != undefined &&
-                    req.query.message != undefined)
+                    req.body.name != undefined &&
+                    req.body.phone != undefined &&
+                    req.body.email != undefined &&
+                    req.body.message != undefined)
 				{
                     postCall(req, res, 'package:'+req.query.package);
                 } else {
