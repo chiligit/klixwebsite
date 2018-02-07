@@ -155,24 +155,30 @@
 
         plan: function(req, res){
 
-            if (req.method == 'POST') {
+            if ((req.query.package != undefined) &&
+                ("package." + req.query.package + ".id" != res.__("package." + req.query.package + ".id"))) {
 
-                if ((req.query.package != undefined) &&
-                    ("package." + req.query.package + ".id" != res.__("package." + req.query.package + ".id")) &&
-                    req.body.name != undefined &&
-                    req.body.phone != undefined &&
-                    req.body.email != undefined &&
-                    req.body.message != undefined)
-				{
-                    postCall(req, res, 'package:'+req.query.package);
+            	if (req.method == 'POST') {
+
+                    if (req.body.name != undefined &&
+                        req.body.phone != undefined &&
+                        req.body.email != undefined &&
+                        req.body.message != undefined)
+                    {
+                        postCall(req, res, 'package:'+req.query.package);
+                    } else {
+                        logBadRequest(req, 'plan', req.query.package);
+                        res.render('index');
+                    }
                 } else {
-                    logBadRequest(req, 'plan', req.query.package);
-                    res.render('index');
+                    var data = { package : req.query.package };
+                    res.render('plan', data);
                 }
-            } else {
-                var data = { package : req.query.package };
-                res.render('plan', data);
-            }
+			} else {
+            	res.redirect('/');
+			}
+
+
         }
 
     };
