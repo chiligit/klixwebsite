@@ -98,13 +98,15 @@
 							doneB(null, response);
 						})
 						.catch(doneB);
-				},
+				}
+				/* ,
 				function(response, doneC) {
 					saveFormData(app,package,req.body).then(function(response) {
 							doneC(null, response);
 						})
 						.catch(doneC);
 				}
+				*/
 			], function(err) {
 				if (!err) {
 					var response = res.__("form.response.success");

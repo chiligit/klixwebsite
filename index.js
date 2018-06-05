@@ -32,6 +32,6 @@ ncp('assets', 'shared', function (err) {
  console.log('Assets shared!');
 });
 
-app.listen(3000);
+app.listen(82);
 
-console.log('Listening on port 3000');
+console.log('Listening on port 82');
